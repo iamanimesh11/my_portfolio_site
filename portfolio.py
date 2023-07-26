@@ -49,7 +49,7 @@ def main():
 
     st.sidebar.title("Contact me:")
     linkedin_profile = "https://www.linkedin.com/in/animesh-singh11"
-    # github_profile = "https://github.com/iamanimesh11"
+    github_profile = "https://github.com/iamanimesh11"
     gmail_address = "iamanimesh11june@gmail.com"
 
     linkedin_icon_data = image_to_base64(Image.open("icons/linkedin.png"))
