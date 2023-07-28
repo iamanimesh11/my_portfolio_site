@@ -5,31 +5,12 @@ import os
 
 
 def main():
-    st.set_page_config(page_title="Animesh portfolio", page_icon=":smiley:", layout="wide",
+    st.set_page_config(page_title="My Streamlit App", page_icon=":smiley:", layout="wide",
                        initial_sidebar_state="expanded")
 
-    hide_github_icon_js = """
-    <style>
-    #MainMenu {
-        display: none;
-    }
-    button.css-ch5dnh {
-        display: none;
-    }
-    </style>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const toolbar = document.querySelector('[data-testid="stToolbar"]');
-        if (toolbar) {
-            toolbar.style.display = 'none';
-        }
-    });
-    </script>
-    """
-    st.markdown(hide_github_icon_js, unsafe_allow_html=True)
-        
-    
-    
+
+
+
     st.markdown(
         '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">',
         unsafe_allow_html=True)
@@ -48,7 +29,7 @@ def main():
         show_resume_page()
 
     st.sidebar.title("Contact me:")
-    linkedin_profile = "https://www.linkedin.com/in/animesh-singh11"
+    linkedin_profile = "https://www.linkedin.com/in/your_linkedin_profile/"
     github_profile = "https://github.com/iamanimesh11"
     gmail_address = "iamanimesh11june@gmail.com"
 
@@ -168,10 +149,8 @@ def show_home_page():
 
     right_column.markdown(styled_text, unsafe_allow_html=True)
 
-
     # "More About Me" text aligned in the center
-    
-        
+
     a_text = """
         <style>
             .about-container {
@@ -225,6 +204,7 @@ def show_home_page():
             </div>
         </div>
     """
+
     st.markdown(a_text, unsafe_allow_html=True)
 
        #my service section::
