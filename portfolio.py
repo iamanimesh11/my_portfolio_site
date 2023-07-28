@@ -224,7 +224,6 @@ def show_home_page():
             </div>
         </div>
     """
-    st.markdown(f"<style>{about_css}</style>",unsafe_allow_html=True)
     st.markdown(a_text, unsafe_allow_html=True)
 
        #my service section::
