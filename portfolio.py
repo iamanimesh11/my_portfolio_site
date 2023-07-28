@@ -169,7 +169,18 @@ def show_home_page():
     right_column.markdown(styled_text, unsafe_allow_html=True)
 
     # "More About Me" text aligned in the center
-
+    about_css="""
+        @media(max-width:700px)
+            .about-container{
+                padding-top:30px;
+            }
+            .about-heading{
+                margin-left:0;
+                text-align:centre;
+            }
+        }
+    """
+        
     a_text = """
         <style>
             .about-container {
@@ -223,13 +234,20 @@ def show_home_page():
             </div>
         </div>
     """
-
+    st.markdown(f"<style>{about_css}</style>",unsafe_allow_html=True)
     st.markdown(a_text, unsafe_allow_html=True)
 
        #my service section::
+    skills_css ="""
+        @media(max-width:700px){
+            h3{
+                text-aligh:centre;
+            }
+        }
+    """
+    st.markdown(f"<style>{skills_css}</style>",unsafe_allow_html=True)
 
     st.markdown("<h1 style='text-align:left;color:#00ff99; margin-left:350px;padding-top:150px;'>My Services:</h1>", unsafe_allow_html=True)
-
     st.markdown(
         """
         <style>
