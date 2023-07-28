@@ -10,7 +10,7 @@ def main():
 
 
 
-    st.toast("please open the website in desktop site mode for better display)
+    st.toast("please open the website in desktop site mode for better display")
     st.markdown(
         '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">',
         unsafe_allow_html=True)
