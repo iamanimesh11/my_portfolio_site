@@ -724,7 +724,8 @@ def show_resume_page():
         PDFbyte = pdf_file.read()
     profile_pic = Image.open(profile_pic)
 
-    col1, col2 = st.columns(2, gap="small")
+    # col1, col2 = st.columns(2, gap="small")
+    col1, col2 = st.columns([1,3])
     with col1:
         st.image(profile_pic, width=230)
 
@@ -743,7 +744,8 @@ def show_resume_page():
     cols = st.columns(len(SOCIAL_MEDIA))
     for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
         cols[index].write(f"[{platform}]({link})")
-
+        
+    st.container()
     st.write('\n')
     st.subheader("Education & Qulifications")
     st.write(
@@ -756,6 +758,7 @@ def show_resume_page():
     )
 
     # --- SKILLS ---
+    st.container()
     st.write('\n')
     st.subheader(" Skills")
     st.write(
@@ -767,7 +770,7 @@ def show_resume_page():
     - 🗄️ Database: MySQL
     """
     )
-
+    st.container()
     st.write('\n')
     st.subheader("Work History")
     st.write("---")
@@ -791,7 +794,7 @@ def show_resume_page():
     - ►  learned to troubleshoot and optimize automation workflows, ensuring smooth and error-free execution.
     """
     )
-
+    st.container()
     st.write('\n')
     st.subheader("Projects :")
     st.write("---")
