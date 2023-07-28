@@ -5,7 +5,7 @@ import os
 
 
 def main():
-    st.set_page_config(page_title="My Streamlit App", page_icon=":smiley:", layout="wide",
+    st.set_page_config(page_title="Animesh portfolio", page_icon=":smiley:", layout="wide",
                        initial_sidebar_state="expanded")
 
     hide_github_icon_js = """
