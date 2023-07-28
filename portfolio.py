@@ -209,27 +209,29 @@ def show_home_page():
 
        #my service section::
     
-    heading_style = """
-    <style>
-    @media only screen and (max-width: 600px) {
-        h1 {
-            text-align: center;
-            margin-left: 0;
-        }
-    }
-    @media only screen and (min-width: 601px) {
-        h1 {
-            text-align: left;
-            margin-left: 350px;
-            padding-top: 150px;
-        }
-    }
-    </style>
-    """
+    # heading_style = """
+    # <style>
+    # @media only screen and (max-width: 600px) {
+    #     h1 {
+    #         text-align: center;
+    #         margin-left: 0;
+    #     }
+    # }
+    # @media only screen and (min-width: 601px) {
+    #     h1 {
+    #         text-align: left;
+    #         margin-left: 350px;
+    #         padding-top: 150px;
+    #     }
+    # }
+    # </style>
+    # """
 
-    heading_content = "<h1 style='color:#00ff99;'>My Services:</h1>"
-    st.markdown(heading_style, unsafe_allow_html=True)
-    st.markdown(heading_content, unsafe_allow_html=True)
+    # heading_content = "<h1 style='color:#00ff99;'>My Services:</h1>"
+    # st.markdown(heading_style, unsafe_allow_html=True)
+    # st.markdown(heading_content, unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:left;color:#00ff99; margin-left:350px;padding-top:150px;'>My Services:</h1>", unsafe_allow_html=True)
+
     st.markdown(
         """
         <style>
