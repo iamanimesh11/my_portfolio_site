@@ -522,6 +522,12 @@ def show_projects_page():
     .custom-button:hover {
         background-color: #808080; /* Dark green on hover */
     }
+    @media (max-width:700px){
+        .service-item{
+            width:90%;
+            margin:40px auto
+        }
+    }
         </style>
         """,
         unsafe_allow_html=True
