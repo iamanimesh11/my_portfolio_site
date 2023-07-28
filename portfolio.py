@@ -168,6 +168,7 @@ def show_home_page():
 
     right_column.markdown(styled_text, unsafe_allow_html=True)
 
+
     # "More About Me" text aligned in the center
     
         
