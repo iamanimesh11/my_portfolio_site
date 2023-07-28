@@ -169,17 +169,7 @@ def show_home_page():
     right_column.markdown(styled_text, unsafe_allow_html=True)
 
     # "More About Me" text aligned in the center
-    about_css="""
-        @media(max-width:700px)
-            .about-container{
-                padding-top:30px;
-            }
-            .about-heading{
-                margin-left:0;
-                text-align:centre;
-            }
-        }
-    """
+    
         
     a_text = """
         <style>
