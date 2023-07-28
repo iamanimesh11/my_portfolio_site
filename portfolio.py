@@ -208,28 +208,7 @@ def show_home_page():
     st.markdown(a_text, unsafe_allow_html=True)
 
        #my service section::
-    
-    # heading_style = """
-    # <style>
-    # @media only screen and (max-width: 600px) {
-    #     h1 {
-    #         text-align: center;
-    #         margin-left: 0;
-    #     }
-    # }
-    # @media only screen and (min-width: 601px) {
-    #     h1 {
-    #         text-align: left;
-    #         margin-left: 350px;
-    #         padding-top: 150px;
-    #     }
-    # }
-    # </style>
-    # """
 
-    # heading_content = "<h1 style='color:#00ff99;'>My Services:</h1>"
-    # st.markdown(heading_style, unsafe_allow_html=True)
-    # st.markdown(heading_content, unsafe_allow_html=True)
     st.markdown("<h1 style='text-align:left;color:#00ff99; margin-left:350px;padding-top:150px;'>My Services:</h1>", unsafe_allow_html=True)
 
     st.markdown(
@@ -524,12 +503,6 @@ def show_projects_page():
     .custom-button:hover {
         background-color: #808080; /* Dark green on hover */
     }
-    @media (max-width:700px){
-        .service-item{
-            width:90%;
-            margin:40px auto
-        }
-    }
         </style>
         """,
         unsafe_allow_html=True
@@ -617,14 +590,6 @@ def show_projects_page():
                 "content": "Uncover your next favorite book effortlessly with our Intelligent Book Suggester web app. Utilizing advanced collaborative filtering techniques and state-of-the-art machine learning algorithms, it offers highly accurate top-rated book recommendations tailored specifically to your unique preferences.Say goodbye to endless searching and let our web app take the guesswork out of finding your next literary adventure  ",
                 "project_link": "https://intelligencebookssuggesterapp.streamlit.app/",
                 "document-link": "https://github.com/iamanimesh11/intelligence_books_suggester_App"
-
-            },
-            {
-                "image_url": "https://th.bing.com/th/id/OIP.TxTL77s6_nJbxM6mME4ScAHaDx?pid=ImgDet&w=783&h=399&rs=1",
-                "title": "Spam Buster AI -an msg spam classifier ml",
-                "content": "Detect spam messages instantly and stay safe from harmful content. Input your message via text or upload a file. The app will provide a verdict on spam presence and raise a red alert if necessary. Explore the word cloud to see frequent spam-related words. Enjoy the interactive experience and learn about spam classification with this educational app!",
-                "project_link": "https://spambusterai.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/SpamBuster_AI"
 
             },
         ]
@@ -732,8 +697,7 @@ def show_resume_page():
         PDFbyte = pdf_file.read()
     profile_pic = Image.open(profile_pic)
 
-    # col1, col2 = st.columns(2, gap="small")
-    col1, col2 = st.columns([1,3])
+    col1, col2 = st.columns(2, gap="small")
     with col1:
         st.image(profile_pic, width=230)
 
@@ -752,8 +716,7 @@ def show_resume_page():
     cols = st.columns(len(SOCIAL_MEDIA))
     for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
         cols[index].write(f"[{platform}]({link})")
-        
-    st.container()
+
     st.write('\n')
     st.subheader("Education & Qulifications")
     st.write(
@@ -766,7 +729,6 @@ def show_resume_page():
     )
 
     # --- SKILLS ---
-    st.container()
     st.write('\n')
     st.subheader(" Skills")
     st.write(
@@ -778,7 +740,7 @@ def show_resume_page():
     - 🗄️ Database: MySQL
     """
     )
-    st.container()
+
     st.write('\n')
     st.subheader("Work History")
     st.write("---")
@@ -802,7 +764,7 @@ def show_resume_page():
     - ►  learned to troubleshoot and optimize automation workflows, ensuring smooth and error-free execution.
     """
     )
-    st.container()
+
     st.write('\n')
     st.subheader("Projects :")
     st.write("---")
