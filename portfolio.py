@@ -611,6 +611,14 @@ def show_projects_page():
                 "document-link": "https://github.com/iamanimesh11/intelligence_books_suggester_App"
 
             },
+            {
+                "image_url": "https://th.bing.com/th/id/OIP.TxTL77s6_nJbxM6mME4ScAHaDx?pid=ImgDet&w=783&h=399&rs=1",
+                "title": "Spam Buster AI -an msg spam classifier ml",
+                "content": "Detect spam messages instantly and stay safe from harmful content. Input your message via text or upload a file. The app will provide a verdict on spam presence and raise a red alert if necessary. Explore the word cloud to see frequent spam-related words. Enjoy the interactive experience and learn about spam classification with this educational app!",
+                "project_link": "https://spambusterai.streamlit.app/",
+                "document-link": "https://github.com/iamanimesh11/SpamBuster_AI"
+
+            },
         ]
 
         row = st.columns(2)
