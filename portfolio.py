@@ -168,9 +168,9 @@ def show_home_page():
                 font-size: 36px;
                 font-weight: bold;
                 text-align: left;
-                margin-left:250px;
+                margin:auto;
                 color: #00ff99;
-                margin-bottom: 30px;
+                margin-bottom: 50px;
                 font-family: "Arial Black", sans-serif;
             }
             .about-text {
