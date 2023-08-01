@@ -306,7 +306,7 @@ def show_home_page():
                 """,
                 unsafe_allow_html=True
             )
-    st.markdown("<h1 style='text-align: left;padding-top:50px;padding-bottom:100px ;color:#00ff99; margin-left:320px' >My Skills:</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: left;padding-top:50px;padding-bottom:100px ;color:#00ff99; margin-left:200px' >My Skills:</h1>", unsafe_allow_html=True)
     technical, Professional_column = st.columns(2)
 
     technical.markdown("<h3 style='text-align: left;padding-top:40px;margin-left:10px;text-decoration: underline;' >Technicals Skills:</h3>", unsafe_allow_html=True)
