@@ -372,7 +372,7 @@ def show_home_page():
                 </div>
             """
         technical.markdown(progress_bar, unsafe_allow_html=True)
-    st.markdown("Navigate to My Projects  and Resume on the left side ")
+    st.markdown("<p style='margin-top: 30px;'>Navigate to <span style='background-color: yellow;'>My Projects</span> and <span style='background-color: yellow;'>Resume</span> on the left side</p>", unsafe_allow_html=True)
 
 
 
