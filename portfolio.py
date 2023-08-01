@@ -211,7 +211,7 @@ def show_home_page():
     
     
 
-    st.markdown("<h1 style='text-align:justify;color:#00ff99; margin-left:350px;padding-top:150px;'>My Services:</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:justify;color:#00ff99; margin:auto;padding-top:150px;'>My Services:</h1>", unsafe_allow_html=True)
 
 
     st.markdown(
