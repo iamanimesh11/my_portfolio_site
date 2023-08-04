@@ -452,7 +452,8 @@ def show_home_page():
 def show_projects_page():
     # st.header("Projects")
 
-    category = st.sidebar.radio("Select a category:", ("RPA Projects", "Machine Learning Projects", "Data Analytics Projects"))
+    category = st.sidebar.radio("Select a category:", ( "Data Science-ML Projects","RPA Projects"))
+
     st.markdown(
         """
         <style>
@@ -582,7 +583,7 @@ def show_projects_page():
 
 
 
-    elif category == "Machine Learning Projects":
+    elif category == "Data Science-ML Projects":
         st.title("My Machine and Deep learning Projects")
         ml_dict = [
 
@@ -635,43 +636,43 @@ def show_projects_page():
                 )
 
 
-    elif category == "Data Analytics Projects":
-             st.title("My Data Analytics  Projects")
-             ml_dict = [
+    # elif category == "Data Analytics Projects":
+    #          st.title("My Data Analytics  Projects")
+    #          ml_dict = [
 
-                 {
-                     "image_url": "https://uktechnews.co.uk/wp-content/uploads/2021/10/shutterstock_1458463553-scaled.jpg",
-                     "title": "Sales Intelligence Console PowerBI",
-                     "content": "The Sales Analysis Dashboard provides an intuitive and interactive interface, enabling you to explore key performance indicators (KPIs) and sales metrics in real-time.Gain real-time insights, track sales performance, and identify growth opportunities effortlessly. Make data-driven decisions and stay ahead in today's dynamic business landscape",
-                     "project_link": "https://github.com/iamanimesh11/sales_intelligence_console_powerBi/blob/main/sales%20console_myDocument.pdf",
-                     "document-link": "https://github.com/iamanimesh11/sales_intelligence_console_powerBi"
+    #              {
+    #                  "image_url": "https://uktechnews.co.uk/wp-content/uploads/2021/10/shutterstock_1458463553-scaled.jpg",
+    #                  "title": "Sales Intelligence Console PowerBI",
+    #                  "content": "The Sales Analysis Dashboard provides an intuitive and interactive interface, enabling you to explore key performance indicators (KPIs) and sales metrics in real-time.Gain real-time insights, track sales performance, and identify growth opportunities effortlessly. Make data-driven decisions and stay ahead in today's dynamic business landscape",
+    #                  "project_link": "https://github.com/iamanimesh11/sales_intelligence_console_powerBi/blob/main/sales%20console_myDocument.pdf",
+    #                  "document-link": "https://github.com/iamanimesh11/sales_intelligence_console_powerBi"
 
-                 },
+    #              },
 
 
 
-             ]
+    #          ]
 
-             row = st.columns(2)
-             for i in range(len(ml_dict)):
-                 with row[i % 2]:
+    #          row = st.columns(2)
+    #          for i in range(len(ml_dict)):
+    #              with row[i % 2]:
 
-                     st.markdown(
-                         f"""
-                                                      <div class="service-item">
-                                                          <img class="service-image" src="{ml_dict[i]['image_url']}">
-                                                          <h2 class="title">{ml_dict[i]['title']}</h2>  <!-- Use h2 instead of p for the title -->
-                                                          <p class="content">{ml_dict[i]['content']}</p>
-                                                          <a href="{ml_dict[i]['project_link']}" target="_blank">
-                                                           <button class="custom-button">Analysis Report</button>
-                                                           </a>
-                                                           <a href="{ml_dict[i]['document-link']}" target="_blank">
-                                                           <button class="custom-button">Projects Files</button>
-                                                           </a>
-                                                      </div>
-                                                      """,
-                         unsafe_allow_html=True
-                     )
+    #                  st.markdown(
+    #                      f"""
+    #                                                   <div class="service-item">
+    #                                                       <img class="service-image" src="{ml_dict[i]['image_url']}">
+    #                                                       <h2 class="title">{ml_dict[i]['title']}</h2>  <!-- Use h2 instead of p for the title -->
+    #                                                       <p class="content">{ml_dict[i]['content']}</p>
+    #                                                       <a href="{ml_dict[i]['project_link']}" target="_blank">
+    #                                                        <button class="custom-button">Analysis Report</button>
+    #                                                        </a>
+    #                                                        <a href="{ml_dict[i]['document-link']}" target="_blank">
+    #                                                        <button class="custom-button">Projects Files</button>
+    #                                                        </a>
+    #                                                   </div>
+    #                                                   """,
+    #                      unsafe_allow_html=True
+    #                  )
 
 
 def show_resume_page():
