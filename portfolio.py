@@ -217,10 +217,8 @@ def show_home_page():
             <h1 class="about-heading">About me:</h1>
             <div class="about-text">
                 <p>
-                    I am a highly skilled professional with expertise in multiple domains, making me a versatile asset capable of tackling diverse challenges.
-                    As an <span class="highlight">UiPath RPA developer</span>, I specialize in creating efficient automation solutions that streamline business processes and boost productivity.
-                    My proficiency as an <span class="highlight">ML engineer</span> allows me to leverage advanced algorithms to build intelligent systems that extract valuable insights from data.
-                </p>
+                   As a dedicated <span class="highlight">Data Science enthusiast</span> with a fervent fascination for <span class="highlight">artificial intelligence</span>, I am driven by the <span class="highlight">infinite possibilities</span> that data and technology present. My journey in the realm of <span class="highlight">data science</span> has ignited a relentless curiosity to decode patterns and extract <span class="highlight">meaningful insights</span> from complex datasets. With a solid foundation in <span class="highlight">machine learning algorithms</span> and <span class="highlight">statistical analysis</span>, I am committed to harnessing the power of <span class="highlight">AI</span> to develop predictive models and innovative solutions that propel businesses forward. My goal is to bridge the gap between <span class="highlight">data-driven decisions</span> and <span class="highlight">AI-driven innovations</span>, pushing the boundaries of what's achievable and reshaping industries. Through constant exploration, hands-on experimentation, and an unquenchable thirst for knowledge,
+                   I aspire to contribute to the <span class="highlight">ever-evolving landscape</span> of data science and AI with creativity and impact. 
                 <p>
                     In addition to <span class="highlight">RPA and ML</span>, I possess a strong background in <span class="highlight">data analysis</span>.
                     Using SQL and Power BI, I delve deep into datasets, uncovering meaningful patterns and trends to drive data-driven decisions.
