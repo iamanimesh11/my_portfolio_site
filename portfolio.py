@@ -783,14 +783,13 @@ def show_resume_page():
         "Website": "",
     }
     PROJECTS = {
-        "🏆 intelligent Sales console -visuals for sales forecasting ": "https://github.com/iamanimesh11/sales_intelligence_console_powerBi",
-        "🏆 Buisnesses Invoices Generator -process to automate invoice generation for business": "",
-        "🏆 Finance-Loan-Application-Processor-Business process  to automoate loan applicatons error free": "",
-        "🏆 Buisnesses Invoices Processor- process to extract clients data  using advanced OCR tech": "",
-        "🏆 Advanced yearly Reports generator-: Automates the creation of comprehensive annual reports": "",
-        "🏆 Movie suggestion Engine -: Offers personalized recommendations based on user movie preferences, ": "",
-        "🏆 Books suggestion Engine -: Employs priority-based and collaborative filtering algorithms to provide personalized book recommendations, ": "",
-
+        "🏆 Movie suggestion Engine -: Offers personalized recommendations based on user movie preferences, ": "https://cinemanexus.streamlit.app/",
+        "🏆 Books Explorer Engine -: Employs priority-based and collaborative filtering algorithms to provide personalized book recommendations, ": "https://intelligencebookssuggesterapp.streamlit.app/",
+        "🏆 Spam Buster AI -an msg spam classifier ml-: Detect spam messages instantly and stay safe from harmful content ": "https://spambusterai.streamlit.app/",
+        "🏆 laptophunt ::perfect laptop -price prediction and product recommendation: get reasonable best choice laptop idea ,also predict prices of any ": "https://laptophunt-perfect-laptop.streamlit.app/",
+        "🏆 MediPredict-Multi-Diseases Predictions AI -Predictions of heart dieesease,liver disease,kidney disease ,diabete disease. ": "https://medipredict-diseases-prediction-ai.streamlit.app/",
+        "🏆 YouTube Video Sentiments Analysis Web App- Analyse you video engagement with many insights ": "https://youtubevideosentimentsanalysis.streamlit.app/",
+        "🏆 Real time Emotions Recognition AI ": "",
 
     }
 
@@ -823,7 +822,7 @@ def show_resume_page():
         
     st.container()
     st.write('\n')
-    st.subheader("Education & Qulifications")
+    st.subheader("Education & Qualifications")
     st.write(
         """
     - ✔️ 2020-2024 Bachleor of Technology in computer science engineering at GALGOTIAS UNIVERSITY,Noida.
@@ -839,14 +838,13 @@ def show_resume_page():
     st.subheader(" Skills")
     st.write(
         """
-    - 👩‍💻 Programming: Python (Scikit-learn, Pandas),.net,HTML/CSS
-    - 🤖 Automation -UiPath soltuion architect
+    - 👩‍💻 Programming: Python,HTML/CSS
     - 📊 Data Visulization:Numpy, Matplotlib, Seaborn,Power BI,Pandas, feature Engineering,EDA
     - 📚 Mathematics for ML/DL:statistics ,Algebra,calculus,Matrices
-    - 😀 libraries& Frameworks -scikit-learn,Scipy,Tensorflow,keras,CV , Beautiful Soup
+    - 😀 libraries& Frameworks -scikit-learn,Scipy,Tensorflow,keras,CV , Beautiful Soup,numpy,pandas
     - 😀 ML/DL/NLP - Supervised,Unsupervised Learning,Model Evaluation,RNN,CNN NLP
     - 🤖 MLops Tools-  MLflow, Jupyter ,collab ,CI/CD, AWS,Azure
-    - 🗄️ Database: MySQL
+    - 🗄️ Database: MySQL,Google firebase
     """
     )
     st.container()
