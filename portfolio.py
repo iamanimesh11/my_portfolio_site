@@ -839,8 +839,8 @@ def show_resume_page():
     st.write(
         """
     - 👩‍💻 Programming: Python,HTML/CSS
-    - 📊 Data Visulization:Numpy, Matplotlib, Seaborn,Power BI,Pandas, feature Engineering,EDA
-    - 📚 Mathematics for ML/DL:statistics ,Algebra,calculus,Matrices
+    - 📊 Data Visulization-Numpy, Matplotlib, Seaborn,Power BI,Pandas, feature Engineering,EDA
+    - 📚 Mathematics for ML/DL- statistics ,Algebra,calculus,Matrices
     - 😀 libraries& Frameworks -scikit-learn,Scipy,Tensorflow,keras,CV , Beautiful Soup,numpy,pandas
     - 😀 ML/DL/NLP - Supervised,Unsupervised Learning,Model Evaluation,RNN,CNN NLP
     - 🤖 MLops Tools-  MLflow, Jupyter ,collab ,CI/CD, AWS,Azure
