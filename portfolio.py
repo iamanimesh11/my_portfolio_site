@@ -856,7 +856,7 @@ def show_resume_page():
 
     st.write("🚧", "*Data Analyst Intern|Lagozon edu Tech")
     st.write("06/2023 - 07/2023")
-    st.write("📍Remote)
+    st.write("📍Remote")
     st.write(
         """
     - ► Used PowerBI and SQL to redeﬁne and track KPIs surrounding marketing initiatives, and supplied recommendations to boost landing page conversion rate by 38%
@@ -867,7 +867,7 @@ def show_resume_page():
     st.write('\n')
     st.write("🚧", "Project Intern |iNeuron.AI")
     st.write("06/2023")
-    st.write("📍Remote)
+    st.write("📍Remote")
 
     st.write(
         """
@@ -879,7 +879,7 @@ def show_resume_page():
     st.write('\n')
     st.write("🚧", "Data Science Intern Intern |codsoft pvt ltd")
     st.write("06/2023-Present")
-    st.write("📍Remote)
+    st.write("📍Remote")
 
     
     st.container()
