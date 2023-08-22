@@ -634,6 +634,7 @@ def show_projects_page():
                 "content": "With a vast database of movies and a powerful recommendation algorithm, Movie Suggest helps you discover your next favorite films effortlessly.app generates personalized movie recommendations based on your favorite films. Simply type in the name of a movie you love, and Movie Suggest will present you with a handpicked list of similar movies that are sure to pique your interest.",
                 "project_link": "https://cinemanexus.streamlit.app/",
                 "document-link": "https://github.com/iamanimesh11/cinema_nexus"
+                "video_url":""
 
             },
 
@@ -643,6 +644,7 @@ def show_projects_page():
                 "content": "Uncover your next favorite book effortlessly with our Intelligent Book Suggester web app. Utilizing advanced collaborative filtering techniques and state-of-the-art machine learning algorithms, it offers highly accurate top-rated book recommendations tailored specifically to your unique preferences.Say goodbye to endless searching and let our web app take the guesswork out of finding your next literary adventure  ",
                 "project_link": "https://intelligencebookssuggesterapp.streamlit.app/",
                 "document-link": "https://github.com/iamanimesh11/intelligence_books_suggester_App"
+                "video_url":""
 
             },
             {
@@ -651,6 +653,7 @@ def show_projects_page():
                 "content": "Detect spam messages instantly and stay safe from harmful content. Input your message via text or upload a file. The app will provide a verdict on spam presence and raise a red alert if necessary. Explore the word cloud to see frequent spam-related words. Enjoy the interactive experience and learn about spam classification with this educational app!",
                 "project_link": "https://spambusterai.streamlit.app/",
                 "document-link": "https://github.com/iamanimesh11/SpamBuster_AI"
+                "video_url":""
 
             },
             {
@@ -658,7 +661,8 @@ def show_projects_page():
                 "title": "laptophunt:perfect-laptop -price prediction and product recommendation",
                 "content": "Discover your ideal laptop effortlessly with Laptops Filter! Browse through 800+ laptops from top brands and filter by brand name and price range. Make informed decisions with sentiment analysis on customer reviews.With an impressive accuracy of 95%, It provide personalized price estimates and recommend updated laptops that match your preferences.",
                 "project_link": "https://laptophunt-perfect-laptop.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/LaptopHunt-Perfect-laptop"
+                "document-link": "https://github.com/iamanimesh11/LaptopHunt-Perfect-laptop",
+                "video_url":""
 
             },
             {
@@ -666,7 +670,8 @@ def show_projects_page():
                 "title": "MediPredict-Multi-Diseases Predictions AI",
                 "content": "Discover insights into your well-being through advanced machine learning models that offer Predictions of heart dieesease,liver disease,kidney disease ,diabete disease. User friendly interface helps you to input the details and let the models in backend works upon it .Accuray are relative high of all prediction model .Don't just get prediction also visualise the details as per required and know what factors are major impact to that particular disease",
                 "project_link": "https://medipredict-diseases-prediction-ai.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/mediPredict_-Disease-prediction-all-in-one"
+                "document-link": "https://github.com/iamanimesh11/mediPredict_-Disease-prediction-all-in-one",
+                "video_url":""
 
             },
             {
@@ -674,7 +679,17 @@ def show_projects_page():
                 "title": "YouTube Video Sentiments Analysis web app",
                 "content": "App allows users to analyze the sentiment distribution of comments on a given YouTube video. By entering the video link and selecting the percentage of comments to analyze. It performs sentiment analysis to categorize comments as positive, negative, or neutral. The app perform sentiment analysis,engagement analysis and offers time analysis for viewer engagement. it provides valuable insights for content creators and marketers.",
                 "project_link": "https://youtubevideosentimentsanalysis.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/youtube_video_sentimentAnalysis"
+                "document-link": "https://github.com/iamanimesh11/youtube_video_sentimentAnalysis",
+                "video_url":""  
+
+            },
+            {
+                "image_url": "https://img.freepik.com/free-vector/emotion-detection-abstract-concept-vector-illustration-speech-emotional-state-recognition-emotion-detection-from-text-sensor-technology-machine-learning-ai-reading-face-abstract-metaphor_335657-2305.jpg?size=338&ext=jpg",
+                "title": "Real time Emotions Recognition AI",
+                "content": "Developed a real-time emotion recognition project using OpenCV for face detection and the DeepFace model. This AI system can analyze emotions from live camera feeds, offering instant insights into emotional expressions. Additionally, users can upload images for analysis, broadening its usability for various scenarios. The integration of these technologies holds promise for improved user experiences and sentiment analysis.",
+                "project_link": "",
+                "document-link": "",
+                "video_url":""  
 
             },
         ]
@@ -686,8 +701,11 @@ def show_projects_page():
                 st.markdown(
                     f"""
                                          <div class="service-item">
-                                             <img class="service-image" src="{ml_dict[i]['image_url']}">
-                                             <h2 class="title">{ml_dict[i]['title']}</h2>  <!-- Use h2 instead of p for the title -->
+                                            <div class="media-container">
+                                                 <img class="service-image" src="{ml_dict[i]['image_url']}">
+                                                 {'<iframe class="service-video" src="' + ml_dict[i]['video_url'] + '" frameborder="0" allowfullscreen></iframe>' if ml_dict[i]['video_url'] else '.'}
+                                            </div>
+                                            <h2 class="title">{ml_dict[i]['title']}</h2>  <!-- Use h2 instead of p for the title -->
                                              <p class="content">{ml_dict[i]['content']}</p>
                                              <a href="{ml_dict[i]['project_link']}" target="_blank">
                                               <button class="custom-button">Check out website</button>
