@@ -17,7 +17,7 @@ def main():
     # Sidebar navigation panel
 
     navigation_options = ["Home", "Projects", "Resume"]
-    selected_option = st.sidebar.selectbox("Go to", navigation_options)
+    selected_option = st.selectbox("Go to", navigation_options)
 
     # Display content based on selected option
     if selected_option == "Home":
@@ -27,33 +27,33 @@ def main():
     elif selected_option == "Resume":
         show_resume_page()
 
-    st.sidebar.title("Contact me:")
-    linkedin_profile = "https://www.linkedin.com/in/your_linkedin_profile/"
-    github_profile = "https://github.com/iamanimesh11"
-    gmail_address = "iamanimesh11june@gmail.com"
+    # st.sidebar.title("Contact me:")
+    # linkedin_profile = "https://www.linkedin.com/in/your_linkedin_profile/"
+    # github_profile = "https://github.com/iamanimesh11"
+    # gmail_address = "iamanimesh11june@gmail.com"
 
-    linkedin_icon_data = image_to_base64(Image.open("icons/linkedin.png"))
-    github_icon_data = image_to_base64(Image.open("icons/github.png"))
-    gmail_icon_data = image_to_base64(Image.open("icons/gmail.png"))
+    # linkedin_icon_data = image_to_base64(Image.open("icons/linkedin.png"))
+    # github_icon_data = image_to_base64(Image.open("icons/github.png"))
+    # gmail_icon_data = image_to_base64(Image.open("icons/gmail.png"))
 
-    icon_size = "50px"
-    icon_margin = "10px"
+    # icon_size = "50px"
+    # icon_margin = "10px"
 
-    css_style = '''
-            .icon:hover {
-                transform: scale(1.2);
-            }
-        '''
+    # css_style = '''
+    #         .icon:hover {
+    #             transform: scale(1.2);
+    #         }
+    #     '''
 
-    linkedin_icon = f'<a href="{linkedin_profile}" target="_blank"><img src="data:image/png;base64,{linkedin_icon_data}" class="icon" width="{icon_size}" height="{icon_size}" style="margin-bottom:{icon_margin};"></a>'
-    github_icon = f'<a href="{github_profile}" target="_blank"><img src="data:image/png;base64,{github_icon_data}" class= "icon" width="{icon_size}" height="{icon_size}"style= border-radius:10px;background-color:white;"margin-bottom:{icon_margin};"></a>'
-    gmail_icon = f'<a href="mailto:{gmail_address}" target="_blank"><img src="data:image/png;base64,{gmail_icon_data}" class= "icon" width="{icon_size}" height="{icon_size}"style="margin-bottom:{icon_margin};"></a>'
+    # linkedin_icon = f'<a href="{linkedin_profile}" target="_blank"><img src="data:image/png;base64,{linkedin_icon_data}" class="icon" width="{icon_size}" height="{icon_size}" style="margin-bottom:{icon_margin};"></a>'
+    # github_icon = f'<a href="{github_profile}" target="_blank"><img src="data:image/png;base64,{github_icon_data}" class= "icon" width="{icon_size}" height="{icon_size}"style= border-radius:10px;background-color:white;"margin-bottom:{icon_margin};"></a>'
+    # gmail_icon = f'<a href="mailto:{gmail_address}" target="_blank"><img src="data:image/png;base64,{gmail_icon_data}" class= "icon" width="{icon_size}" height="{icon_size}"style="margin-bottom:{icon_margin};"></a>'
 
-    st.markdown(f'<style>{css_style}</style>', unsafe_allow_html=True)
+    # st.markdown(f'<style>{css_style}</style>', unsafe_allow_html=True)
 
-    st.sidebar.markdown(
-        f'<div style="display: flex; flex-direction: column; align-items: center;">{linkedin_icon}{github_icon}{gmail_icon}</div>',
-        unsafe_allow_html=True)
+    # st.sidebar.markdown(
+    #     f'<div style="display: flex; flex-direction: column; align-items: center;">{linkedin_icon}{github_icon}{gmail_icon}</div>',
+    #     unsafe_allow_html=True)
 
 def show_home_page():
     glowing_text_css = """
@@ -147,6 +147,37 @@ def show_home_page():
     """
 
     right_column.markdown(styled_text, unsafe_allow_html=True)
+    linkedin_profile = "https://www.linkedin.com/in/your_linkedin_profile/"
+    github_profile = "https://github.com/iamanimesh11"
+    gmail_address = "iamanimesh11june@gmail.com"
+
+    linkedin_icon_data = image_to_base64(Image.open("icons/linkedin.png"))
+    github_icon_data = image_to_base64(Image.open("icons/github.png"))
+    gmail_icon_data = image_to_base64(Image.open("icons/gmail.png"))
+
+    icon_size = "50px"
+    icon_margin = "10px"
+
+    css_style = '''
+                .icon:hover {
+                    transform: scale(1.2);
+                }
+            '''
+
+    linkedin_icon = f'<a href="{linkedin_profile}" target="_blank"><img src="data:image/png;base64,{linkedin_icon_data}" class="icon" width="{icon_size}" height="{icon_size}" style="margin-bottom:{icon_margin};"></a>'
+    github_icon = f'<a href="{github_profile}" target="_blank"><img src="data:image/png;base64,{github_icon_data}" class= "icon" width="{icon_size}" height="{icon_size}"style= border-radius:10px;background-color:white;"margin-bottom:{icon_margin};"></a>'
+    gmail_icon = f'<a href="mailto:{gmail_address}" target="_blank"><img src="data:image/png;base64,{gmail_icon_data}" class= "icon" width="{icon_size}" height="{icon_size}"style="margin-bottom:{icon_margin};"></a>'
+
+    right_column.markdown(f'<style>{css_style}</style>', unsafe_allow_html=True)
+
+    # Set the margin value (adjust as needed)
+    icon_margin = "10px"
+
+    right_column.markdown(
+        f'<div style="display: flex; justify-content: center;">'
+        f'{linkedin_icon}<span style="margin: {icon_margin};"></span>{github_icon}'
+        f'<span style="margin: {icon_margin};"></span>{gmail_icon}</div>',
+        unsafe_allow_html=True)
 
     # "More About Me" text aligned in the center
 
