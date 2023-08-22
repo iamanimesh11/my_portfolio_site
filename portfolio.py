@@ -217,17 +217,17 @@ def show_home_page():
             <h1 class="about-heading">About me:</h1>
             <div class="about-text">
                 <p>
-                   As a dedicated <span class="highlight">Data Science enthusiast</span> with a fervent fascination for <span class="highlight">artificial intelligence</span>, I am driven by the <span class="highlight">infinite possibilities</span> that data and technology present. My journey in the realm of <span class="highlight">data science</span> has ignited a relentless curiosity to decode patterns and extract <span class="highlight">meaningful insights</span> from complex datasets. With a solid foundation in <span class="highlight">machine learning algorithms</span> and <span class="highlight">statistical analysis</span>, I am committed to harnessing the power of <span class="highlight">AI</span> to develop predictive models and innovative solutions that propel businesses forward. My goal is to bridge the gap between <span class="highlight">data-driven decisions</span> and <span class="highlight">AI-driven innovations</span>, pushing the boundaries of what's achievable and reshaping industries. Through constant exploration, hands-on experimentation, and an unquenchable thirst for knowledge,
-                   I aspire to contribute to the <span class="highlight">ever-evolving landscape</span> of data science and AI with creativity and impact. 
+                   As a dedicated <span class="highlight">Data Science enthusiast</span> with a fervent fascination for <span class="highlight">artificial intelligence</span>, I am driven by the <span class="highlight">infinite possibilities</span> that data and technology present. My journey in the realm of data science has ignited a relentless curiosity to decode patterns and extract <span class="highlight">meaningful insights</span> from complex datasets. With a good foundation in <span class="highlight">machine learning algorithms , deep learning</span> and <span class="highlight">statistical analysis</span>, I am committed to harnessing the power of <span class="highlight">AI</span> to develop predictive models and innovative solutions that propel businesses forward. Through constant exploration, hands-on experimentation, and an unquenchable thirst for knowledge,
+                   I aspire to contribute to the ever-evolving landscape of data science and AI with creativity and impact. 
                 <p>
-                    In addition to <span class="highlight">RPA and ML</span>, I possess a strong background in <span class="highlight">data analysis</span>.
+                    I possess a strong background in <span class="highlight">data analysis</span>.
                     Using SQL and Power BI, I delve deep into datasets, uncovering meaningful patterns and trends to drive data-driven decisions.
                     My ability to work with Power BI allows me to create interactive and visually compelling dashboards, presenting complex information in an accessible and understandable manner.
                 </p>
                 <p>
-                    With my combined expertise in <span class="highlight">RPA, ML, and data analysis</span>, I am equipped to solve complex problems and optimize processes for businesses.
+                    my good expertise in <span class="highlight">RPA</span>, I am equipped to solve complex problems and optimize processes for businesses.
                     My passion for staying at the forefront of technological advancements ensures that I can deliver innovative and effective solutions that drive growth and success.
-                    As a diligent professional, I am dedicated to making a significant impact on projects and contributing to the overall success of any organization.
+                    I am dedicated to making a significant impact on projects and contributing to the overall success of any organization.
                 </p>
             </div>
         </div>
@@ -775,7 +775,7 @@ def show_resume_page():
         """
     - ✔️ Bachleor of technology in computer science engineering 
     - ✔️ Proficient in RPA development, utilizing automation tools to streamline processes and improve efficiency.
-    - ✔️ Good understanding of statistical mathematics for machine leaning
+    - ✔️ Good understanding of statistical mathematics for machine learning
     - ✔️ Excellent team-player and displaying strong sense of initiative on tasks
     """
     )
