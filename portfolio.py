@@ -5,7 +5,7 @@ import os
 
 
 def main():
-    st.set_page_config(page_title="Animesh portfolio App", page_icon=":smiley:",layout="wide",initial_sidebar_state="expanded")
+    st.set_page_config(page_title="Animesh portfolio App", page_icon=":smiley:",layout="wide")
 
 
 
@@ -484,7 +484,7 @@ def show_home_page():
 def show_projects_page():
     # st.header("Projects")
 
-    category = st.sidebar.radio("Select a category:", ( "Data Science-ML Projects","RPA Projects"))
+    category = st.radio("Select a category:", ( "Data Science-ML Projects","RPA Projects"))
 
     st.markdown(
         """
