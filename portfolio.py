@@ -767,14 +767,14 @@ def show_resume_page():
 
     current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
     css_file = current_dir / "main.css"
-    resume_file = current_dir / "animesh_Resume.pdf"
+    resume_file = current_dir / "Animesh_Resume_f.pdf"
     profile_pic = current_dir / "unnamed-removebg-preview-modified.png"
 
     PAGE_TITLE = "Digital CV | Animes Singh"
     PAGE_ICON = ":wave:"
     NAME = "Animesh Singh"
     DESCRIPTION = """
-    Data Analyst, Ml engineer and RPA developer.
+    Data Scientist,AI enthusiast
     """
     EMAIL = "iamanimesh11june@gmail.com"
     SOCIAL_MEDIA = {
@@ -826,10 +826,10 @@ def show_resume_page():
     st.subheader("Education & Qulifications")
     st.write(
         """
-    - ✔️ Bachleor of technology in computer science engineering 
-    - ✔️ Proficient in RPA development, utilizing automation tools to streamline processes and improve efficiency.
-    - ✔️ Good understanding of statistical mathematics for machine learning
-    - ✔️ Excellent team-player and displaying strong sense of initiative on tasks
+    - ✔️ 2020-2024 Bachleor of Technology in computer science engineering at GALGOTIAS UNIVERSITY,Noida.
+    - ✔️ Worked on Images Encryption project by  using Advanced Encryption Standard and deployed it.
+    - ✔️ pursuing Google Data Analytics Advanced course-190 hours
+    - ✔️ Completed Database and SQL by Infosys 
     """
     )
 
@@ -839,37 +839,63 @@ def show_resume_page():
     st.subheader(" Skills")
     st.write(
         """
-    - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL,.net,HTML/CSS
+    - 👩‍💻 Programming: Python (Scikit-learn, Pandas),.net,HTML/CSS
     - 🤖 Automation -UiPath soltuion architect
-    - 📊 Data Visulization: PowerBi, MS Excel, Plotly
-    - 📚 ml,dl:pytorch ,keras,CNN,NLP,Model Deployment
+    - 📊 Data Visulization:Numpy, Matplotlib, Seaborn,Power BI,Pandas, feature Engineering,EDA
+    - 📚 Mathematics for ML/DL:statistics ,Algebra,calculus,Matrices
+    - 😀 libraries& Frameworks -scikit-learn,Scipy,Tensorflow,keras,CV , Beautiful Soup
+    - 😀 ML/DL/NLP - Supervised,Unsupervised Learning,Model Evaluation,RNN,CNN NLP
+    - 🤖 MLops Tools-  MLflow, Jupyter ,collab ,CI/CD, AWS,Azure
     - 🗄️ Database: MySQL
     """
     )
     st.container()
     st.write('\n')
-    st.subheader("Work History")
+    st.subheader("Internship and Training")
     st.write("---")
 
-    st.write("🚧", "**Virual internship - Data Analyst |Lagazon Tech")
-    st.write("07/2023 - Present")
+    st.write("🚧", "*Data Analyst Intern|Lagozon edu Tech")
+    st.write("06/2023 - 07/2023")
+    st.write("📍Remote)
     st.write(
         """
     - ► Used PowerBI and SQL to redeﬁne and track KPIs surrounding marketing initiatives, and supplied recommendations to boost landing page conversion rate by 38%
-    - ►implemented powerbi visuals in real life projects 
+    - ► implemented powerbi visuals in real life projects 
     """
     )
 
     st.write('\n')
-    st.write("🚧", "RPA automation and develoment |AICTE EduSkills UiPath")
-    st.write("05/2023 - 07/2023")
+    st.write("🚧", "Project Intern |iNeuron.AI")
+    st.write("06/2023")
+    st.write("📍Remote)
+
     st.write(
         """
-    - ► Build real world Automation workflows with handling all exceptions that may occur
-    - ► designed and built custom workflows and automation scripts to streamline repetitive tasks, allowing employees to focus on more strategic activities.
-    - ►  learned to troubleshoot and optimize automation workflows, ensuring smooth and error-free execution.
+    - ► Build real world  Books Recommendation Engine with accuracy of over 95%.
+    - ► prepared all documentation of project with handling all eception cases that may occur.
+    - ►  learned to handle the deployed app with all time cases in Mlops
     """
     )
+    st.write('\n')
+    st.write("🚧", "Data Science Intern Intern |codsoft pvt ltd")
+    st.write("06/2023-Present")
+    st.write("📍Remote)
+
+    
+    st.container()
+    st.write('\n')
+    st.subheader("Certifications :")
+    st.write("---")
+    st.write("📜:Microsoft Learn Skill AI Challenge | Microsoft,july 2023")
+    st.write("📜:Python Essential| cisco ,july 2023")
+    st.write("📜:Database and SQL | infosys ,2023")
+    st.write("📜:Data Analysis-powerBI and SQL| Lagozon pvt ltd.,2023")
+
+
+
+
+    
+
     st.container()
     st.write('\n')
     st.subheader("Projects :")
