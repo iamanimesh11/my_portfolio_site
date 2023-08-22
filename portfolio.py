@@ -135,7 +135,7 @@ def show_home_page():
                 </h1>
             </div>
             <p class="description">
-                I am a <span class="role">RPA Developer</span>, <span class="role">ML Enthusiast</span>, and <span class="role">Data Analyst</span>
+                I am a <span class="role">Data Scientist</span>, <span class="role">AI Enthusiast</span>, and <span class="role">RPA Developer</span>
                 with a passion for leveraging data and technology to drive innovation.
             </p>
             <p class="quote">
