@@ -210,7 +210,7 @@ def show_home_page():
     
     
 
-    st.markdown("<h1 style='text-align:justify;color:#00ff99; margin:auto;padding-top:150px;'>My Services:</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:justify;color:#00ff99; margin:auto;padding-top:150px;'>What I do:</h1>", unsafe_allow_html=True)
 
 
     st.markdown(
@@ -271,21 +271,23 @@ def show_home_page():
 
     services_data_dict = [
         {
+            "image_url": "https://ravh-it.com/wp-content/uploads/2020/07/data-science-logo-icon.png",
+            "title":"Data Science",
+            "content": "In the realm of Data Science and Machine Learning, I uncover the hidden potential within your data using sophisticated algorithms. Elevate your business with insights that drive informed decisions and streamlined processes. Embrace the forefront of innovation with cutting-edge Machine Learning techniques. Let's collaborate to achieve shared success on this transformative journey!",
+        },
+         {
+            "image_url": "https://assets.datacamp.com/production/tracks/1206/badges/original/Data_Analyst.png?1558088045",
+            "title": "Data Analysis",
+            "content": "From data modeling to interactive dashboards, I offer tailored solutions for optimizing your business strategies. Embrace the power of data-driven decision-making and drive growth with my expertise in Data Analysis and Power BI. Let's explore the potential of your data together!",
+        },
+        {
             "image_url":("https://synapticap.com/wp-content/uploads/2020/10/ui-path-logo-1.png"),
              "title":"Robotic process Automation",
             "content": "As an RPA specialist, I automate repetitive tasks, boost productivity, and integrate RPA solutions into your existing systems. Embrace efficiency and innovation for your business success. Let's work together to unleash the power of automation.",
 
         },
-        {
-            "image_url": "https://i.pinimg.com/originals/6f/d8/3f/6fd83f6c101f85bb417448302daedfb9.png",
-            "title":"Machine Learning",
-            "content": "As a Machine Learning expert, I unlock the power of data through advanced algorithms. Empower your business with data-driven decisions and optimized processes. Embrace the future of innovation with Machine Learning. Let's achieve success together! Let's embark on this transformative journey together!",
-        },
-        {
-            "image_url": "https://assets.datacamp.com/production/tracks/1206/badges/original/Data_Analyst.png?1558088045",
-            "title": "Data Analysis",
-            "content": "From data modeling to interactive dashboards, I offer tailored solutions for optimizing your business strategies. Embrace the power of data-driven decision-making and drive growth with my expertise in Data Analysis and Power BI. Let's explore the potential of your data together!",
-        },
+        
+       
     ]
 
     row = st.columns(4)
