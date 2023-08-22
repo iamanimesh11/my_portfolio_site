@@ -886,10 +886,10 @@ def show_resume_page():
     st.write('\n')
     st.subheader("Certifications :")
     st.write("---")
-    st.write("📜", Microsoft Learn Skill AI Challenge | Microsoft,july 2023")
-    st.write("📜",Python Essential| cisco ,july 2023")
-    st.write("📜",Database and SQL | infosys ,2023")
-    st.write("📜",Data Analysis-powerBI and SQL| Lagozon pvt ltd.,2023")
+    st.write("📜"," Microsoft Learn Skill AI Challenge | Microsoft,july 2023")
+    st.write("📜","Python Essential| cisco ,july 2023")
+    st.write("📜","Database and SQL | infosys ,2023")
+    st.write("📜","Data Analysis-powerBI and SQL| Lagozon pvt ltd.,2023")
 
 
 
