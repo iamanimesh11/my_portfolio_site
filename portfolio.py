@@ -342,10 +342,14 @@ def show_home_page():
     technical.markdown("<h3 style='text-align: left;padding-top:40px;margin-left:10px;text-decoration: underline;' >Technicals Skills:</h3>", unsafe_allow_html=True)
 
     technical_skills = [
-        {"skill": "UIpath RPA", "level": 95},
+        {"skill": "Exploratory Data analysis", "level": 95},
         {"skill": "Machine Learning", "level": 80},
-        {"skill": "statistics & Mathematics", "level": 70},
-        {"skill": "Automation Solution Architech", "level": 70},
+        {"skill": "computer vision", "level": 70},
+
+        {"skill": "statistics & Mathematics", "level": 80},
+        {"skill": "Automation Solution Architect", "level": 75},
+        {"skill": "UIpath RPA", "level": 95},
+
         {"skill": "python", "level": 80},
         {"skill": "Html &css", "level": 70},
         {"skill": "Power BI", "level": 80},
@@ -353,24 +357,31 @@ def show_home_page():
         # Add more skills as needed
     ]
     skill_colors = {
-        "UIpath RPA": "#FF5733",
+        "Exploratory Data Analysis": "#ff0066",
+
         "Machine Learning": "#33FF57",
-        "statistics & Mathematics": "#5733FF",
-        "Automation Solution Architech": "#FF33E1",
+        "computer vision": "#FF5733",
+        "Statistics & Mathematics": "#5733FF",
+        "Automation Solution Architect": "#FF33E1",
+        "UIpath RPA": "#FF5733",
         "python": "#FF5733",
         "Html &css": "#33FF57",
         "Power BI": "#5733FF",
         "Deep learning": "#FF33E1",
     }
     skill_icons = {
-        "UIpath RPA": "robot",
+        "Exploratory Data Analysis": "chart-line",
+
+
         "Machine Learning": "cogs",
+        "computer vision": "eye",
         "statistics & Mathematics": "chart-bar",
-        "Automation Solution Architech": "laptop-code",
-        "python": "python",
-        "Html &css": "code",
-        "Power BI": "chart-pie",
-        "Deep learning": "brain",
+    "Automation Solution Architech": "laptop",
+        "UIpath RPA": "robot",
+    "python": "python",
+    "Html &css": "code",
+    "Power BI": "chart-pie",
+    "Deep learning": "brain",
     }
 
     for skill_info in technical_skills:
@@ -408,7 +419,7 @@ def show_home_page():
 
 
 
-    Professional_column.markdown("<h3 style='text-align: left;padding-top:40px;margin-left:10px;text-decoration: underline;' >Professionals Skills:</h3>", unsafe_allow_html=True)
+    Professional_column.markdown("<h3 style='text-align: left;padding-top:40px;margin-left:10px;text-decoration: underline;' >SoftT Skills:</h3>", unsafe_allow_html=True)
 
     profession_skills1 = [
         {"skill": "TeamWork", "level": 90},
