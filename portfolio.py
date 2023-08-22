@@ -5,8 +5,7 @@ import os
 
 
 def main():
-    st.set_page_config(page_title="Animesh portfolio App", page_icon=":smiley:",
-                       initial_sidebar_state="expanded")
+    st.set_page_config(page_title="Animesh portfolio App", page_icon=":smiley:",layout="wide",initial_sidebar_state="expanded")
 
 
 
