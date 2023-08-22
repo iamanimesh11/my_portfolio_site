@@ -671,7 +671,7 @@ def show_projects_page():
             },
             {
                 "image_url": "https://youtubevideosentimentsanalysis.streamlit.app/~/+/media/34b570ec99d07137dc6006f1d6a5054b7515b7075cf7d59194be0577.png",
-                "title": "YouTube Video Sentiments Analysis web app"
+                "title": "YouTube Video Sentiments Analysis web app",
                 "content": "App allows users to analyze the sentiment distribution of comments on a given YouTube video. By entering the video link and selecting the percentage of comments to analyze. It performs sentiment analysis to categorize comments as positive, negative, or neutral. The app perform sentiment analysis,engagement analysis and offers time analysis for viewer engagement. it provides valuable insights for content creators and marketers.",
                 "project_link": "https://youtubevideosentimentsanalysis.streamlit.app/",
                 "document-link": "https://github.com/iamanimesh11/youtube_video_sentimentAnalysis"
