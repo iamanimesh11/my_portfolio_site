@@ -633,8 +633,8 @@ def show_projects_page():
                 "title": "Movies Suggestion Engine",
                 "content": "With a vast database of movies and a powerful recommendation algorithm, Movie Suggest helps you discover your next favorite films effortlessly.app generates personalized movie recommendations based on your favorite films. Simply type in the name of a movie you love, and Movie Suggest will present you with a handpicked list of similar movies that are sure to pique your interest.",
                 "project_link": "https://cinemanexus.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/cinema_nexus"
-                "video_url":""
+                "document-link": "https://github.com/iamanimesh11/cinema_nexus",
+                "video_url":" "
 
             },
 
@@ -643,8 +643,8 @@ def show_projects_page():
                 "title": "Books Explorer Engine",
                 "content": "Uncover your next favorite book effortlessly with our Intelligent Book Suggester web app. Utilizing advanced collaborative filtering techniques and state-of-the-art machine learning algorithms, it offers highly accurate top-rated book recommendations tailored specifically to your unique preferences.Say goodbye to endless searching and let our web app take the guesswork out of finding your next literary adventure  ",
                 "project_link": "https://intelligencebookssuggesterapp.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/intelligence_books_suggester_App"
-                "video_url":""
+                "document-link": "https://github.com/iamanimesh11/intelligence_books_suggester_App",
+                "video_url":" "
 
             },
             {
@@ -652,8 +652,8 @@ def show_projects_page():
                 "title": "Spam Buster AI -an msg spam classifier ml",
                 "content": "Detect spam messages instantly and stay safe from harmful content. Input your message via text or upload a file. The app will provide a verdict on spam presence and raise a red alert if necessary. Explore the word cloud to see frequent spam-related words. Enjoy the interactive experience and learn about spam classification with this educational app!",
                 "project_link": "https://spambusterai.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/SpamBuster_AI"
-                "video_url":""
+                "document-link": "https://github.com/iamanimesh11/SpamBuster_AI",
+                "video_url":" "
 
             },
             {
