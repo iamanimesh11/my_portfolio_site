@@ -302,7 +302,7 @@ def show_home_page():
 
     services_data_dict = [
         {
-            "image_url": "https://ravh-it.com/wp-content/uploads/2020/07/data-science-logo-icon.png",
+            "image_url": "https://beidevelopment.com/wp-content/uploads/2021/05/machine-learning.png",
             "title":"Data Science",
             "content": "In the realm of Data Science and Machine Learning, I uncover the hidden potential within your data using sophisticated algorithms. Elevate your business with insights that drive informed decisions and streamlined processes. Embrace the forefront of innovation with cutting-edge Machine Learning techniques. Let's collaborate to achieve shared success on this transformative journey!",
         },
@@ -404,7 +404,7 @@ def show_home_page():
                 </div>
             """
         technical.markdown(progress_bar, unsafe_allow_html=True)
-    st.markdown("<p style='margin-top: 230px;'>Navigate to <span style='color: yellow;'>My Projects</span> and <span style='color: yellow;'>Resume</span> on the left side</p>", unsafe_allow_html=True)
+    # st.markdown("<p style='margin-top: 230px;'>Navigate to <span style='color: yellow;'>My Projects</span> and <span style='color: yellow;'>Resume</span> on the left side</p>", unsafe_allow_html=True)
 
 
 
