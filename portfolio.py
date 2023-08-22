@@ -419,7 +419,7 @@ def show_home_page():
 
 
 
-    Professional_column.markdown("<h3 style='text-align: left;padding-top:40px;margin-left:10px;text-decoration: underline;' >SoftT Skills:</h3>", unsafe_allow_html=True)
+    Professional_column.markdown("<h3 style='text-align: left;padding-top:40px;margin-left:10px;text-decoration: underline;' >Soft Skills:</h3>", unsafe_allow_html=True)
 
     profession_skills1 = [
         {"skill": "TeamWork", "level": 90},
@@ -651,6 +651,30 @@ def show_projects_page():
                 "content": "Detect spam messages instantly and stay safe from harmful content. Input your message via text or upload a file. The app will provide a verdict on spam presence and raise a red alert if necessary. Explore the word cloud to see frequent spam-related words. Enjoy the interactive experience and learn about spam classification with this educational app!",
                 "project_link": "https://spambusterai.streamlit.app/",
                 "document-link": "https://github.com/iamanimesh11/SpamBuster_AI"
+
+            },
+            {
+                "image_url": "https://www.pngarts.com/files/4/Laptop-PNG-Image-Transparent.png",
+                "title": "laptophunt:perfect-laptop -price prediction and product recommendation",
+                "content": "Discover your ideal laptop effortlessly with Laptops Filter! Browse through 800+ laptops from top brands and filter by brand name and price range. Make informed decisions with sentiment analysis on customer reviews.With an impressive accuracy of 95%, It provide personalized price estimates and recommend updated laptops that match your preferences.",
+                "project_link": "https://laptophunt-perfect-laptop.streamlit.app/",
+                "document-link": "https://github.com/iamanimesh11/LaptopHunt-Perfect-laptop"
+
+            },
+            {
+                "image_url": "https://www.pngarts.com/files/1/Health-PNG-Pic.png",
+                "title": "MediPredict-Multi-Diseases Predictions AI",
+                "content": "Discover insights into your well-being through advanced machine learning models that offer Predictions of heart dieesease,liver disease,kidney disease ,diabete disease. User friendly interface helps you to input the details and let the models in backend works upon it .Accuray are relative high of all prediction model .Don't just get prediction also visualise the details as per required and know what factors are major impact to that particular disease",
+                "project_link": "https://medipredict-diseases-prediction-ai.streamlit.app/",
+                "document-link": "https://github.com/iamanimesh11/mediPredict_-Disease-prediction-all-in-one"
+
+            },
+            {
+                "image_url": "https://youtubevideosentimentsanalysis.streamlit.app/~/+/media/34b570ec99d07137dc6006f1d6a5054b7515b7075cf7d59194be0577.png",
+                "title": "YouTube Video Sentiments Analysis web app"
+                "content": "App allows users to analyze the sentiment distribution of comments on a given YouTube video. By entering the video link and selecting the percentage of comments to analyze. It performs sentiment analysis to categorize comments as positive, negative, or neutral. The app perform sentiment analysis,engagement analysis and offers time analysis for viewer engagement. it provides valuable insights for content creators and marketers.",
+                "project_link": "https://youtubevideosentimentsanalysis.streamlit.app/",
+                "document-link": "https://github.com/iamanimesh11/youtube_video_sentimentAnalysis"
 
             },
         ]
