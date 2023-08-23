@@ -138,9 +138,7 @@ def show_home_page():
             <p class="quote">
                 "The only way to do great work is to love what you do." - Steve Jobs
             </p>
-            <p class="description">
-                Let's collaborate and build <span class="role">amazing</span> solutions together!
-            </p>
+        
         </div>
     """
 
