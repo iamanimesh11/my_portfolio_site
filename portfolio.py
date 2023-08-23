@@ -686,8 +686,8 @@ def show_projects_page():
                 "image_url": "https://img.freepik.com/free-vector/emotion-detection-abstract-concept-vector-illustration-speech-emotional-state-recognition-emotion-detection-from-text-sensor-technology-machine-learning-ai-reading-face-abstract-metaphor_335657-2305.jpg?size=338&ext=jpg",
                 "title": "Real time Emotions Recognition AI",
                 "content": "Developed a real-time emotion recognition project using OpenCV for face detection and the DeepFace model. This AI system can analyze emotions from live camera feeds, offering instant insights into emotional expressions. Additionally, users can upload images for analysis, broadening its usability for various scenarios. The integration of these technologies holds promise for improved user experiences and sentiment analysis.",
-                "project_link": "",
-                "document-link": "",
+                "project_link": "https://real-time-emotions-recognition.streamlit.app/",
+                "document-link": "https://github.com/iamanimesh11/real-time_emotion_recognition/tree/main",
                 "video_url":""  
 
             },
