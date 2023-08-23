@@ -135,9 +135,7 @@ def show_home_page():
                 I am a <span class="role">Data Scientist</span>, <span class="role">AI Enthusiast</span>, and <span class="role">RPA Developer</span>
                 with a passion for leveraging data and technology to drive innovation.
             </p>
-            <p class="quote">
-                "The only way to do great work is to love what you do." - Steve Jobs
-            </p>
+            
         
         </div>
     """
