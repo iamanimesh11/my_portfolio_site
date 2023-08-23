@@ -307,7 +307,7 @@ def show_home_page():
         {
             "image_url": ("https://synapticap.com/wp-content/uploads/2020/10/ui-path-logo-1.png"),
             "title": "Robotic process Automation",
-            "content": "As an RPA specialist, I automate repetitive tasks, boost productivity, and integrate RPA solutions into your existing systems. Embrace efficiency and innovation for your business success. Let's work together to unleash the power of automation.",
+            "content": " I sometimes automate repetitive tasks, boost productivity, and integrate RPA solutions into your existing systems. Embrace efficiency and innovation for your business success. Let's work together to unleash the power of automation.",
 
         },
 
