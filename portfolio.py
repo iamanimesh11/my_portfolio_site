@@ -563,7 +563,6 @@ def show_projects_page():
 
 
     if category == "RPA Projects":
-             st.title("Robotics Process Automation Projects")
              RPA_dict = [
 
                  {
