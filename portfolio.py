@@ -70,15 +70,12 @@ def show_home_page():
     """
 
     left_column, right_column = st.columns(2)
-    #
-    # image = Image.open("unnamed-removebg-preview-modified.png")
-    # image_html = f"<img src='https://www.acumatica.com/media/2021/03/Artifical-Intelligence.png'" \
-    #              f"style='border: 2px solid #ffffff; border-radius: 160px; box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;' " \
-    #              f"width='300' alt='Beautiful Image'>"
-    # left_column.markdown(image_html, unsafe_allow_html=True)
-    markdown_text = "![Beautiful Image](https://www.acumatica.com/media/2021/03/Artifical-Intelligence.png)"
-    left_column.markdown(markdown_text)
-    left_column.markdown("")
+
+    image = Image.open("unnamed-removebg-preview-modified.png")
+    image_html = f"<img src='data:image/png;base64,{image_to_base64(image)}' " \
+                 f"style='border: 2px solid #ffffff; border-radius: 160px; box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;' " \
+                 f"width='300' alt='Beautiful Image'>"
+    left_column.markdown(image_html, unsafe_allow_html=True)
 
     styled_text = """
         <style>
@@ -176,62 +173,61 @@ def show_home_page():
         f'<span style="margin: {icon_margin};"></span>{gmail_icon}</div>',
         unsafe_allow_html=True)
 
-    st.markdown("<h1 style='text-align:justify;color:#00ff99; margin-left:800px;padding-top:150px;'>About me</h1>",
-                unsafe_allow_html=True)
-    st.markdown(
-        """
+    # "More About Me" text aligned in the center
+
+    a_text = """
         <style>
             .about-container {
-                display: flex;
-                align-items: center;
-                margin-top:100px;
-                margin-left:150px;
+                max-width: 800px;
+                margin: 0 auto;
+                padding-top: 100px;
+                padding-bottom: 50px;
+                text-align: justify;
+                font-size: 20px;
+                line-height: 1.6;
+                color: #ffffff;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
-    
-            .about-image {
-                flex: 1;
-                padding-right: 20px;
-            }
-    
-            .about-text {
-                flex: 2;
-                border-left: 1px dashed #dddddd;
-                padding-left: 20px;
-            }
-    
             .about-heading {
-                font-size: 24px;
+                font-size: 36px;
                 font-weight: bold;
+                text-align: left;
+                margin:auto;
+                color: #00ff99;
+                margin-bottom: 50px;
+                font-family: "Arial Black", sans-serif;
             }
-    
-            .about-paragraph {
-                font-size: 22px;
-                line-height: 1.5;
+            .about-text {
+                padding-bottom: 70px;
             }
-    
             .highlight {
-                background-color: #ffff00;
+                background: linear-gradient(45deg, #ff5f6d, #ff9970);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 font-weight: bold;
             }
         </style>
         <div class="about-container">
-            <div class="about-image">
-                <img src="https://animesh11portfolio.streamlit.app/~/+/media/a4fe36d1283c78b806710e5acf5c39b72709848478c8abe6ad3c2a55.png" width="300">
-            </div>
+            <h1 class="about-heading">About me:</h1>
             <div class="about-text">
-                <p class="about-paragraph">
-                    A Data Science enthusiast, unraveling patterns and deriving insights from intricate data using ML,dl and statistics. Committed to crafting predictive models"
+                <p>
+                   As a dedicated <span class="highlight">Data Science enthusiast</span> with a fervent fascination for <span class="highlight">artificial intelligence</span>, I am driven by the <span class="highlight">infinite possibilities</span> that data and technology present. My journey in the realm of data science has ignited a relentless curiosity to decode patterns and extract <span class="highlight">meaningful insights</span> from complex datasets. With a good foundation in <span class="highlight">machine learning algorithms , deep learning</span> and <span class="highlight">statistical analysis</span>, I am committed to harnessing the power of <span class="highlight">AI</span> to develop predictive models and innovative solutions that propel businesses forward. Through constant exploration, hands-on experimentation, and an unquenchable thirst for knowledge,
+                   I aspire to contribute to the ever-evolving landscape of data science and AI with creativity and impact. 
+                <p>
+                    I possess a strong background in <span class="highlight">data analysis</span>.
+                    Using SQL and Power BI, I delve deep into datasets, uncovering meaningful patterns and trends to drive data-driven decisions.
+                    My ability to work with Power BI allows me to create interactive and visually compelling dashboards, presenting complex information in an accessible and understandable manner.
                 </p>
-                <p class="about-paragraph">
-                    Delve deep into datasets, uncovering meaningful patterns and trends to drive data-driven decisions."
-                </p>
-                <p class="about-paragraph">
-                    With strong RPA expertise,forward mindset fuels innovative, impactful, and growth-driving solutions to project success"
+                <p>
+                    my good expertise in <span class="highlight">RPA</span>, I am equipped to solve complex problems and optimize processes for businesses.
+                    My passion for staying at the forefront of technological advancements ensures that I can deliver innovative and effective solutions that drive growth and success.
+                    I am dedicated to making a significant impact on projects and contributing to the overall success of any organization.
                 </p>
             </div>
         </div>
-        """,
-        unsafe_allow_html=True)
+    """
+
+    st.markdown(a_text, unsafe_allow_html=True)
 
     # my service section::
 
@@ -888,4 +884,3 @@ def image_to_base64(image):
 
 if __name__ == "__main__":
     main()
-
