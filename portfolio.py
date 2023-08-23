@@ -1,15 +1,14 @@
 import streamlit as st
 import time
-from PIL import  Image
+from PIL import Image
 import os
 
 
 def main():
-    st.set_page_config(page_title="Animesh portfolio App", page_icon=":smiley:",layout="wide")
+    st.set_page_config(page_title="My Streamlit App", page_icon=":smiley:", layout="wide",)
 
+    st.toast("please open the website in desktop mode for better display")
 
-
-    st.toast("please open the website in desktop site mode for better display")
     st.markdown(
         '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">',
         unsafe_allow_html=True)
@@ -31,29 +30,30 @@ def main():
     # linkedin_profile = "https://www.linkedin.com/in/your_linkedin_profile/"
     # github_profile = "https://github.com/iamanimesh11"
     # gmail_address = "iamanimesh11june@gmail.com"
-
+    #
     # linkedin_icon_data = image_to_base64(Image.open("icons/linkedin.png"))
     # github_icon_data = image_to_base64(Image.open("icons/github.png"))
     # gmail_icon_data = image_to_base64(Image.open("icons/gmail.png"))
-
+    #
     # icon_size = "50px"
     # icon_margin = "10px"
-
+    #
     # css_style = '''
     #         .icon:hover {
     #             transform: scale(1.2);
     #         }
     #     '''
-
+    #
     # linkedin_icon = f'<a href="{linkedin_profile}" target="_blank"><img src="data:image/png;base64,{linkedin_icon_data}" class="icon" width="{icon_size}" height="{icon_size}" style="margin-bottom:{icon_margin};"></a>'
     # github_icon = f'<a href="{github_profile}" target="_blank"><img src="data:image/png;base64,{github_icon_data}" class= "icon" width="{icon_size}" height="{icon_size}"style= border-radius:10px;background-color:white;"margin-bottom:{icon_margin};"></a>'
     # gmail_icon = f'<a href="mailto:{gmail_address}" target="_blank"><img src="data:image/png;base64,{gmail_icon_data}" class= "icon" width="{icon_size}" height="{icon_size}"style="margin-bottom:{icon_margin};"></a>'
-
+    #
     # st.markdown(f'<style>{css_style}</style>', unsafe_allow_html=True)
-
+    #
     # st.sidebar.markdown(
     #     f'<div style="display: flex; flex-direction: column; align-items: center;">{linkedin_icon}{github_icon}{gmail_icon}</div>',
     #     unsafe_allow_html=True)
+
 
 def show_home_page():
     glowing_text_css = """
@@ -69,7 +69,6 @@ def show_home_page():
                          0 0 35px rgba(255, 0, 102, 0.8);
         }
     """
-
 
     left_column, right_column = st.columns(2)
 
@@ -134,7 +133,7 @@ def show_home_page():
                 </h1>
             </div>
             <p class="description">
-                I am a <span class="role">Data Scientist</span>, <span class="role">AI Enthusiast</span>, and <span class="role">RPA Developer</span>
+                I am a <span class="role">ML Enthusiast</span>, <span class="role">Data Analyst</span>, and <span class="role">RPA Developer</span>
                 with a passion for leveraging data and technology to drive innovation.
             </p>
             <p class="quote">
@@ -179,8 +178,6 @@ def show_home_page():
         f'<span style="margin: {icon_margin};"></span>{gmail_icon}</div>',
         unsafe_allow_html=True)
 
-    # "More About Me" text aligned in the center
-
     a_text = """
         <style>
             .about-container {
@@ -198,9 +195,9 @@ def show_home_page():
                 font-size: 36px;
                 font-weight: bold;
                 text-align: left;
-                margin:auto;
+                margin-left:250px;
                 color: #00ff99;
-                margin-bottom: 50px;
+                margin-bottom: 30px;
                 font-family: "Arial Black", sans-serif;
             }
             .about-text {
@@ -235,12 +232,10 @@ def show_home_page():
 
     st.markdown(a_text, unsafe_allow_html=True)
 
-       #my service section::
-    
-    
+    # my service section::
 
-    st.markdown("<h1 style='text-align:justify;color:#00ff99; margin:auto;padding-top:150px;'>What I do:</h1>", unsafe_allow_html=True)
-
+    st.markdown("<h1 style='text-align:left;color:#00ff99; margin-left:350px;padding-top:150px;'>What I do:</h1>",
+                unsafe_allow_html=True)
 
     st.markdown(
         """
@@ -262,12 +257,12 @@ def show_home_page():
         }
         .service-image {
             height: 70px;
-            
+
             border-top-left-radius: 70px;
             border-top-right-radius: 10px;
             margin: auto;
         }
-        
+
         .title {
             font-size: 20px;
             font-weight: bold;
@@ -275,7 +270,7 @@ def show_home_page():
             margin-left: 50px;
             margin-bottom: 5px;
         }
-        
+
         .custom-button {
         background-color: #4CAF50; /* Green background */
         border: none; /* Remove border */
@@ -292,54 +287,55 @@ def show_home_page():
     .custom-button:hover {
         background-color: #45a049; /* Dark green on hover */
     }
+    
         </style>
         """,
         unsafe_allow_html=True
     )
 
-
     services_data_dict = [
         {
-            "image_url": "https://beidevelopment.com/wp-content/uploads/2021/05/machine-learning.png",
-            "title":"Data Science",
-            "content": "In the realm of Data Science and Machine Learning, I uncover the hidden potential within your data using sophisticated algorithms. Elevate your business with insights that drive informed decisions and streamlined processes. Embrace the forefront of innovation with cutting-edge Machine Learning techniques. Let's collaborate to achieve shared success on this transformative journey!",
+            "image_url": ("https://synapticap.com/wp-content/uploads/2020/10/ui-path-logo-1.png"),
+            "title": "Robotic process Automation",
+            "content": "As an RPA specialist, I automate repetitive tasks, boost productivity, and integrate RPA solutions into your existing systems. Embrace efficiency and innovation for your business success. Let's work together to unleash the power of automation.",
+
         },
-         {
+        {
+            "image_url": "https://i.pinimg.com/originals/6f/d8/3f/6fd83f6c101f85bb417448302daedfb9.png",
+            "title": "Machine Learning",
+            "content": "As a Machine Learning expert, I unlock the power of data through advanced algorithms. Empower your business with data-driven decisions and optimized processes. Embrace the future of innovation with Machine Learning. Let's achieve success together! Let's embark on this transformative journey together!",
+        },
+        {
             "image_url": "https://assets.datacamp.com/production/tracks/1206/badges/original/Data_Analyst.png?1558088045",
             "title": "Data Analysis",
             "content": "From data modeling to interactive dashboards, I offer tailored solutions for optimizing your business strategies. Embrace the power of data-driven decision-making and drive growth with my expertise in Data Analysis and Power BI. Let's explore the potential of your data together!",
         },
-        {
-            "image_url":("https://synapticap.com/wp-content/uploads/2020/10/ui-path-logo-1.png"),
-             "title":"Robotic process Automation",
-            "content": "As an RPA specialist, I automate repetitive tasks, boost productivity, and integrate RPA solutions into your existing systems. Embrace efficiency and innovation for your business success. Let's work together to unleash the power of automation.",
-
-        },
-        
-       
     ]
 
     row = st.columns(4)
     for i in range(len(services_data_dict)):
         with row[i % 4]:
-
             st.markdown(
                 f"""
                 <div class="service-item">
                     <img class="service-image" src="{services_data_dict[i]['image_url']}">
                     <h2 class="title">{services_data_dict[i]['title']}</h2>  <!-- Use h2 instead of p for the title -->
                     <p class="content">{services_data_dict[i]['content']}</p>
-                     
+
 
                 </a>
                 </div>
                 """,
                 unsafe_allow_html=True
             )
-    st.markdown("<h1 style='text-align: left;padding-top:50px;padding-bottom:100px ;color:#00ff99; margin :auto;' >My Skills:</h1>", unsafe_allow_html=True)
+    st.markdown(
+        "<h1 style='text-align: left;padding-top:50px;padding-bottom:100px ;color:#00ff99; margin-left:320px' >My Skills:</h1>",
+        unsafe_allow_html=True)
     technical, Professional_column = st.columns(2)
 
-    technical.markdown("<h3 style='text-align: left;padding-top:40px;margin-left:10px;text-decoration: underline;' >Technicals Skills:</h3>", unsafe_allow_html=True)
+    technical.markdown(
+        "<h3 style='text-align: left;padding-top:40px;margin-left:10px;text-decoration: underline;' >Technicals Skills:</h3>",
+        unsafe_allow_html=True)
 
     technical_skills = [
         {"skill": "Exploratory Data analysis", "level": 95},
@@ -413,13 +409,10 @@ def show_home_page():
                 </div>
             """
         technical.markdown(progress_bar, unsafe_allow_html=True)
-    # st.markdown("<p style='margin-top: 230px;'>Navigate to <span style='color: yellow;'>My Projects</span> and <span style='color: yellow;'>Resume</span> on the left side</p>", unsafe_allow_html=True)
 
-
-
-
-
-    Professional_column.markdown("<h3 style='text-align: left;padding-top:40px;margin-left:10px;text-decoration: underline;' >Soft Skills:</h3>", unsafe_allow_html=True)
+    Professional_column.markdown(
+        "<h3 style='text-align: left;padding-top:40px;margin-left:10px;text-decoration: underline;' >Professionals Skills:</h3>",
+        unsafe_allow_html=True)
 
     profession_skills1 = [
         {"skill": "TeamWork", "level": 90},
@@ -443,7 +436,6 @@ def show_home_page():
         circumference = 2 * 3.14 * radius
         progress = (100 - level) * circumference / 100
 
-
         colors = ["#2196F3", "#9C27B0", "#2196F3", "#9C27B0"]
 
         color_index = profession_skills1.index(skill_info) % len(colors)
@@ -461,24 +453,22 @@ def show_home_page():
         """
         Pcol1.markdown(circular_progress_bar, unsafe_allow_html=True)
 
-
     for skill_info in profession_skills2:
-            skill = skill_info["skill"]
-            level = skill_info["level"]
+        skill = skill_info["skill"]
+        level = skill_info["level"]
 
+        radius = 45
+        circumference = 2 * 3.14 * radius
+        progress = (100 - level) * circumference / 100
 
-            radius = 45
-            circumference = 2 * 3.14 * radius
-            progress = (100 - level) * circumference / 100
+        colors = ["#FF0000", "#FFFF00"]
 
-            colors = ["#FF0000", "#FFFF00"]
+        color_index = profession_skills2.index(skill_info) % len(colors)
+        skill_color = colors[color_index]
 
-            color_index = profession_skills2.index(skill_info) % len(colors)
-            skill_color = colors[color_index]
+        Pcol2.markdown(f"<h6 style='color: {skill_color};padding-top:10px;'>{skill}</h6>", unsafe_allow_html=True)
 
-            Pcol2.markdown(f"<h6 style='color: {skill_color};padding-top:10px;'>{skill}</h6>", unsafe_allow_html=True)
-
-            circular_progress_bar = f"""
+        circular_progress_bar = f"""
                         <svg width="90" height="100" viewBox="0 0 100 100" style="filter: drop-shadow(0 0 4px rgba(0, 255, 0, 0.5));">
                             <circle cx="50" cy="50" r="{radius}" fill="transparent" stroke="#ddd" stroke-width="10"></circle>
                             <circle cx="50" cy="50" r="{radius}" fill="transparent" stroke="{skill_color}" stroke-width="10"
@@ -486,35 +476,34 @@ def show_home_page():
                             <text x="50" y="50" text-anchor="middle" fill="{skill_color}" font-size="18" dy="6">{level}%</text>
                         </svg>
                     """
-            Pcol2.markdown(circular_progress_bar, unsafe_allow_html=True)
-
+        Pcol2.markdown(circular_progress_bar, unsafe_allow_html=True)
 
 
 def show_projects_page():
     # st.header("Projects")
 
-    category = st.radio("Select a category:", ( "Data Science-ML Projects","RPA Projects"))
-
+    category = st.radio("Select a category:", ("Data Science-ML Projects", "RPA Projects"))
     st.markdown(
         """
         <style>
         .service-item {
             background-color: black;
-            margin: 80px;
+            margin: 10px;
             padding: 10px;
-            width : 400px;
+            width : 750px;
+            height:650px;
             box-shadow: 5 2px 4px rgba(5000, 0, 0, 0.1);
             border-radius: 40px;
             overflow: hidden;
             transition: transform 0.3s;
-            margin-bottom: 80px; /* Add spacing between rows */
+
         }
         .book-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
         }
         .service-image {
-            height: 350px;
+            height: 450px;
             width:350px
             border-top-left-radius: 200px;
             border-top-right-radius: 200px;
@@ -525,7 +514,7 @@ def show_projects_page():
             text-align: center;
         }
         .title {
-            font-size: 20px;
+            font-size: 30px;
             font-weight: bold;
             color: #FFFFFF;
             margin-left: 50px;
@@ -545,67 +534,61 @@ def show_projects_page():
         border-radius: 20px; /* Add border radius */
         cursor: pointer; /* Add cursor pointer on hover */
         margin-left: 50px;
-        margin-top: 10px; /* Add top margin */
     }
     .custom-button:hover {
         background-color: #808080; /* Dark green on hover */
     }
-    @media (max-width:700px){
-        .service-item{
-            width:90%;
-            margin:40px auto
-        }
-    }
+    .conntent{
+        font-size:30px;    }
         </style>
         """,
         unsafe_allow_html=True
     )
 
-
     if category == "RPA Projects":
-             RPA_dict = [
+        st.title("Robotics Process Automation Projects")
+        RPA_dict = [
 
-                 {
-                     "image_url": "https://akabot.com/wp-content/uploads/2021/06/b2-1.png",
-                     "title": "Buisnesses Invoices Generator",
-                     "content": "This avant-garde project automates invoice generation for large businesses. It seamlessly integrates with databases, third-party apps, and email systems to swiftly create and distribute invoices. Boosting efficiency and accuracy, it sets new standards for streamlined business operations.",
-                     "project_link": "https://github.com/iamanimesh11/rpaproject_invoice_generator",
-                     "document-link": "https://github.com/iamanimesh11/rpaproject_invoice_generator/blob/main/Data/buisness%20files/pdd%20document.pdf"
+            {
+                "image_url": "https://akabot.com/wp-content/uploads/2021/06/b2-1.png",
+                "title": "Buisnesses Invoices Generator",
+                "content": "This avant-garde project automates invoice generation for large businesses. It seamlessly integrates with databases, third-party apps, and email systems to swiftly create and distribute invoices. Boosting efficiency and accuracy, it sets new standards for streamlined business operations.",
+                "project_link": "https://github.com/iamanimesh11/rpaproject_invoice_generator",
+                "document-link": "https://github.com/iamanimesh11/rpaproject_invoice_generator/blob/main/Data/buisness%20files/pdd%20document.pdf"
 
-                 },
+            },
 
-                 {
-                     "image_url": "https://th.bing.com/th/id/OIP.WatBDJy77PD3IJEpH5CFAAAAAA?pid=ImgDet&w=370&h=370&rs=1",
-                     "title": "Finance-Loan-Application-Processor",
-                     "content": "The Finance Loan Application Process Project is a cutting-edge system that automates loan applications. Extracting data from Excel, it seamlessly populates the loan site and handles complex exceptions. Adapting to loan criteria, it ensures an efficient and reliable application process, setting new standards for the financial industry.",
-                     "project_link": "https://github.com/iamanimesh11/finance-Loan-Application-process-project",
-                     "document-link": "https://github.com/iamanimesh11/finance-Loan-Application-process-project/blob/main/Data/PDD_Loan%20Application%20Processing.pdf"
+            {
+                "image_url": "https://th.bing.com/th/id/OIP.WatBDJy77PD3IJEpH5CFAAAAAA?pid=ImgDet&w=370&h=370&rs=1",
+                "title": "Finance-Loan-Application-Processor",
+                "content": "The Finance Loan Application Process Project is a cutting-edge system that automates loan applications. Extracting data from Excel, it seamlessly populates the loan site and handles complex exceptions. Adapting to loan criteria, it ensures an efficient and reliable application process, setting new standards for the financial industry.",
+                "project_link": "https://github.com/iamanimesh11/finance-Loan-Application-process-project",
+                "document-link": "https://github.com/iamanimesh11/finance-Loan-Application-process-project/blob/main/Data/PDD_Loan%20Application%20Processing.pdf"
 
-                 },
-                 {
-                     "image_url": (
-                         "https://margmultisolutions.com/wp-content/uploads/2021/07/e-invoicing-software.png"),
-                     "title": "Buisnesses Invoices Processor",
-                     "content": " This cutting-edge project streamlines large enterprise operations, automating client data management. It retrieves Invoice emails, downloads attachments, and extracts data using advanced OCR technology. Organized reports are promptly sent to designated recipients, revolutionizing invoicing efficiency and data handling.",
-                     "project_link": "https://github.com/iamanimesh11/project_invoice_processing",
-                     "document-link": "https://github.com/iamanimesh11/project_invoice_processing/blob/main/Data/process%20design%20document.pdf"
-                 },
-                 {
-                     "image_url": (
-                         "https://th.bing.com/th/id/OIP.Xu4cvMthf6lV0UxzYI1V3QHaHa?w=171&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"),
-                     "title": "Advanced yearly Reports generator",
-                     "content": " Utilizing UiPath Studio and Orchestrator, it employs the advanced REFramework template to collect, process, and create final yearly reports, while seamlessly updating statuses with unique identifiers. This project equips learners to tackle complex automation challenges with finesse.",
-                     "project_link": "https://github.com/iamanimesh11/project_generate_yearly_report",
-                     "document-link": "https://github.com/iamanimesh11/project_generate_yearly_report"
-                 },
-             ]
+            },
+            {
+                "image_url": (
+                    "https://margmultisolutions.com/wp-content/uploads/2021/07/e-invoicing-software.png"),
+                "title": "Buisnesses Invoices Processor",
+                "content": " This cutting-edge project streamlines large enterprise operations, automating client data management. It retrieves Invoice emails, downloads attachments, and extracts data using advanced OCR technology. Organized reports are promptly sent to designated recipients, revolutionizing invoicing efficiency and data handling.",
+                "project_link": "https://github.com/iamanimesh11/project_invoice_processing",
+                "document-link": "https://github.com/iamanimesh11/project_invoice_processing/blob/main/Data/process%20design%20document.pdf"
+            },
+            {
+                "image_url": (
+                    "https://th.bing.com/th/id/OIP.Xu4cvMthf6lV0UxzYI1V3QHaHa?w=171&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"),
+                "title": "Advanced yearly Reports generator",
+                "content": " Utilizing UiPath Studio and Orchestrator, it employs the advanced REFramework template to collect, process, and create final yearly reports, while seamlessly updating statuses with unique identifiers. This project equips learners to tackle complex automation challenges with finesse.",
+                "project_link": "https://github.com/iamanimesh11/project_generate_yearly_report",
+                "document-link": "https://github.com/iamanimesh11/project_generate_yearly_report"
+            },
+        ]
 
-             row = st.columns(2)
-             for i in range(len(RPA_dict)):
-                 with row[i % 2]:
-
-                     st.markdown(
-                         f"""
+        row = st.columns(2)
+        for i in range(len(RPA_dict)):
+            with row[i % 2]:
+                st.markdown(
+                    f"""
                                  <div class="service-item">
                                      <img class="service-image" src="{RPA_dict[i]['image_url']}">
                                      <h2 class="title">{RPA_dict[i]['title']}</h2>  <!-- Use h2 instead of p for the title -->
@@ -618,13 +601,12 @@ def show_projects_page():
                                       </a>
                                  </div>
                                  """,
-                         unsafe_allow_html=True
-                     )
+                    unsafe_allow_html=True
+                )
 
 
 
     elif category == "Data Science-ML Projects":
-        # st.title("My Machine and Deep learning Projects")
         ml_dict = [
 
             {
@@ -633,7 +615,8 @@ def show_projects_page():
                 "content": "With a vast database of movies and a powerful recommendation algorithm, Movie Suggest helps you discover your next favorite films effortlessly.app generates personalized movie recommendations based on your favorite films. Simply type in the name of a movie you love, and Movie Suggest will present you with a handpicked list of similar movies that are sure to pique your interest.",
                 "project_link": "https://cinemanexus.streamlit.app/",
                 "document-link": "https://github.com/iamanimesh11/cinema_nexus",
-                "video_url":""
+                "video_url": ""
+
 
             },
 
@@ -644,101 +627,156 @@ def show_projects_page():
                 "project_link": "https://intelligencebookssuggesterapp.streamlit.app/",
                 "document-link": "https://github.com/iamanimesh11/intelligence_books_suggester_App",
                 "video_url":""
-
-            },
-            {
-                "image_url": "https://th.bing.com/th/id/OIP.TxTL77s6_nJbxM6mME4ScAHaDx?pid=ImgDet&w=783&h=399&rs=1",
-                "title": "Spam Buster AI -an msg spam classifier ml",
-                "content": "Detect spam messages instantly and stay safe from harmful content. Input your message via text or upload a file. The app will provide a verdict on spam presence and raise a red alert if necessary. Explore the word cloud to see frequent spam-related words. Enjoy the interactive experience and learn about spam classification with this educational app!",
-                "project_link": "https://spambusterai.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/SpamBuster_AI",
-                "video_url":""
-
-            },
-            {
-                "image_url": "https://www.pngarts.com/files/4/Laptop-PNG-Image-Transparent.png",
-                "title": "laptophunt:perfect-laptop -price prediction and product recommendation",
-                "content": "Discover your ideal laptop effortlessly with Laptops Filter! Browse through 800+ laptops from top brands and filter by brand name and price range. Make informed decisions with sentiment analysis on customer reviews.With an impressive accuracy of 95%, It provide personalized price estimates and recommend updated laptops that match your preferences.",
-                "project_link": "https://laptophunt-perfect-laptop.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/LaptopHunt-Perfect-laptop",
-                "video_url":""
-
-            },
-            {
-                "image_url": "https://www.pngarts.com/files/1/Health-PNG-Pic.png",
-                "title": "MediPredict-Multi-Diseases Predictions AI",
-                "content": "Discover insights into your well-being through advanced machine learning models that offer Predictions of heart dieesease,liver disease,kidney disease ,diabete disease. User friendly interface helps you to input the details and let the models in backend works upon it .Accuray are relative high of all prediction model .Don't just get prediction also visualise the details as per required and know what factors are major impact to that particular disease",
-                "project_link": "https://medipredict-diseases-prediction-ai.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/mediPredict_-Disease-prediction-all-in-one",
-                "video_url":""
-
-            },
-            {
-                "image_url": "https://youtubevideosentimentsanalysis.streamlit.app/~/+/media/34b570ec99d07137dc6006f1d6a5054b7515b7075cf7d59194be0577.png",
-                "title": "YouTube Video Sentiments Analysis web app",
-                "content": "App allows users to analyze the sentiment distribution of comments on a given YouTube video. By entering the video link and selecting the percentage of comments to analyze. It performs sentiment analysis to categorize comments as positive, negative, or neutral. The app perform sentiment analysis,engagement analysis and offers time analysis for viewer engagement. it provides valuable insights for content creators and marketers.",
-                "project_link": "https://youtubevideosentimentsanalysis.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/youtube_video_sentimentAnalysis",
-                "video_url":""  
-
             },
             {
                 "image_url": "https://img.freepik.com/free-vector/emotion-detection-abstract-concept-vector-illustration-speech-emotional-state-recognition-emotion-detection-from-text-sensor-technology-machine-learning-ai-reading-face-abstract-metaphor_335657-2305.jpg?size=338&ext=jpg",
                 "title": "Real time Emotions Recognition AI",
-                "content": "Developed a real-time emotion recognition project using OpenCV for face detection and the DeepFace model. This AI system can analyze emotions from live camera feeds, offering instant insights into emotional expressions. Additionally, users can upload images for analysis, broadening its usability for various scenarios. The integration of these technologies holds promise for improved user experiences and sentiment analysis.",
-                "project_link": "https://real-time-emotions-recognition.streamlit.app/",
-                "document-link": "https://github.com/iamanimesh11/real-time_emotion_recognition/tree/main",
-                "video_url":""  
+                "content": "I've developed a real-time emotion recognition project using OpenCV for face detection and the DeepFace model. This AI system can analyze emotions from live camera feeds, offering instant insights into emotional expressions. Additionally, users can upload images for analysis, broadening its usability for various scenarios. The integration of these technologies holds promise for improved user experiences and sentiment analysis.",
+                "project_link": "",
+                "document-link": "",
+                 "video_url":""
 
-            },
+        },
         ]
 
-        row = st.columns(2)
-        for i in range(len(ml_dict)):
-            with row[i % 2]:
+        row2, images = st.columns(2)
+        images.markdown(
+            f"""                <div class="service-item">
+                                                    <div class="media-container">
+                                                    </div>
+                                                    <h2 class="title">Real time Emotions Recognition AI</h2>  <!-- Use h2 instead of p for the title -->
+                                                     <p class="conntent">"I've developed a real-time emotion recognition project using OpenCV for face detection and the DeepFace model. This AI system can analyze emotions from live camera feeds, offering instant insights into emotional expressions. Additionally, users can upload images for analysis, broadening its usability for various scenarios. The integration of these technologies holds promise for improved user experiences and sentiment analysis.",</p>
+                                                     <a href="https://intelligencebookssuggesterapp.streamlit.app/" target="_blank">
+                                                      <button class="custom-button">Check out website</button>
+                                                      </a>
+                                                      <a href="https://intelligencebookssuggesterapp.streamlit.app/" target="_blank">
+                                                      <button class="custom-button">Projects Files</button>
+                                                      </a>
+                                                 </div>
+                                                 """,
+            unsafe_allow_html=True
+        )
 
-                st.markdown(
-                    f"""
-                                         <div class="service-item">
-                                            <div class="media-container">
-                                                 <img class="service-image" src="{ml_dict[i]['image_url']}">
-                                                 {'<iframe class="service-video" src="' + ml_dict[i]['video_url'] + '" frameborder="0" allowfullscreen></iframe>' if ml_dict[i]['video_url'] else '.'}
+        # Initialize index to keep track of the current image
+        content = [
+            {
+                "type": "image",
+                "url": "https://img.freepik.com/free-vector/emotion-detection-abstract-concept-vector-illustration-speech-emotional-state-recognition-emotion-detection-from-text-sensor-technology-machine-learning-ai-reading-face-abstract-metaphor_335657-2305.jpg?size=338&ext=jpg"
+            },
+            {
+                "type": "image",
+                "url": "https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg"
+            },
+            {
+                "type": "video",
+                "url": "https://youtu.be/embed/32kYH6XZrIo"
+            },
+            # Add more content items here
+        ]
+
+        # Initialize index to keep track of the current image
+        index = st.session_state.get('index', 0)
+        current_content = content[index]
+
+        row2.markdown(
+        """
+        <style>
+        .servvice-item {
+            background-color: black;
+            margin: 0px;
+            padding: 10px;
+            width : 750px;
+            height:650px;
+            box-shadow: 5 2px 4px rgba(5000, 0, 0, 0.1);
+            border-radius: 40px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .servvice-image {
+            height: 550px;
+            width:650px;
+            margin-left:35px;
+
+            border-top-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+            
+        }
+        .servvice-video {
+           height: 550px;
+            width:650px;
+            margin-left:35px;
+            border-top-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+            
+            
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+        # Display the current image using HTML
+        if current_content["type"] == "image":
+            # Display the current image using HTML
+            row2.markdown(
+                f"""                              
+
+                    <div class="servvice-item">
+                        <div class="media-container">
+                        <img class="servvice-image" src="{current_content['url']}">
+                         </div>
+                          <h2 class="title">Real time Emotions Recognition AI</h2>  <!-- Use h2 instead of p for the title -->
+                     </div>
+                           """,
+                unsafe_allow_html=True
+            )
+        elif current_content["type"] == "video":
+            # Display the current video using HTML
+            # row2.video(current_content["url"])
+            row2.markdown(
+                f"""                              
+
+                                            <div class="servvice-item">
+                                                 <div class="media-container">
+                                                 {'<iframe class="servvice-video" src="' + "https://youtube.com/embed/UXnJzrMKBK8" + '"  allowfullscreen></iframe>'}
+                                                  </div>
+                                                <h2 class="title">Real time Emotions Recognition AI</h2>  <!-- Use h2 instead of p for the title -->
                                             </div>
-                                            <h2 class="title">{ml_dict[i]['title']}</h2>  <!-- Use h2 instead of p for the title -->
-                                             <p class="content">{ml_dict[i]['content']}</p>
-                                             <a href="{ml_dict[i]['project_link']}" target="_blank">
-                                              <button class="custom-button">Check out website</button>
-                                              </a>
-                                              <a href="{ml_dict[i]['document-link']}" target="_blank">
-                                              <button class="custom-button">Projects Files</button>
-                                              </a>
-                                         </div>
-                                         """,
-                    unsafe_allow_html=True
-                )
+                                             """,
+                unsafe_allow_html=True
+            )
+
+        # Previous and Next buttons
+        col1, col2,col3,col4,col5,col6 = row2.columns(6)
+        if col3.button("Previous") and index > 0:
+            index -= 1
+        if col4.button("Next") and index < len(content) - 1:
+            index += 1
+
+        # Update session state
+        st.session_state.index = index
 
 
-    # elif category == "Data Analytics Projects":
+# elif category == "Data Analytics Projects":
     #          st.title("My Data Analytics  Projects")
     #          ml_dict = [
-
+    #
     #              {
     #                  "image_url": "https://uktechnews.co.uk/wp-content/uploads/2021/10/shutterstock_1458463553-scaled.jpg",
     #                  "title": "Sales Intelligence Console PowerBI",
     #                  "content": "The Sales Analysis Dashboard provides an intuitive and interactive interface, enabling you to explore key performance indicators (KPIs) and sales metrics in real-time.Gain real-time insights, track sales performance, and identify growth opportunities effortlessly. Make data-driven decisions and stay ahead in today's dynamic business landscape",
     #                  "project_link": "https://github.com/iamanimesh11/sales_intelligence_console_powerBi/blob/main/sales%20console_myDocument.pdf",
     #                  "document-link": "https://github.com/iamanimesh11/sales_intelligence_console_powerBi"
-
+    #
     #              },
-
-
-
+    #
+    #
+    #
     #          ]
-
+    #
     #          row = st.columns(2)
     #          for i in range(len(ml_dict)):
     #              with row[i % 2]:
-
+    #
     #                  st.markdown(
     #                      f"""
     #                                                   <div class="service-item">
@@ -758,7 +796,6 @@ def show_projects_page():
 
 
 def show_resume_page():
-
     from pathlib import Path
 
     import streamlit as st
@@ -766,14 +803,14 @@ def show_resume_page():
 
     current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
     css_file = current_dir / "main.css"
-    resume_file = current_dir / "Animesh_Resume_f.pdf"
+    resume_file = current_dir / "animesh_Resume.pdf"
     profile_pic = current_dir / "unnamed-removebg-preview-modified.png"
 
     PAGE_TITLE = "Digital CV | Animes Singh"
     PAGE_ICON = ":wave:"
     NAME = "Animesh Singh"
     DESCRIPTION = """
-    Data Scientist,AI enthusiast
+    Data Analyst, Ml engineer and RPA developer.
     """
     EMAIL = "iamanimesh11june@gmail.com"
     SOCIAL_MEDIA = {
@@ -782,8 +819,8 @@ def show_resume_page():
         "Website": "",
     }
     PROJECTS = {
-        "🏆 Movie suggestion Engine -: Offers personalized recommendations based on user movie preferences, ": "https://cinemanexus.streamlit.app/",
-        "🏆 Books Explorer Engine -: Employs priority-based and collaborative filtering algorithms to provide personalized book recommendations, ": "https://intelligencebookssuggesterapp.streamlit.app/",
+        "🏆 Movie suggestion Engine -: Offers personalized recommendations based on user movie preferences, ": "",
+        "🏆 Books Explorer Engine -: Employs priority-based and collaborative filtering algorithms to provide personalized book recommendations, ": "",
         "🏆 Spam Buster AI -an msg spam classifier ml-: Detect spam messages instantly and stay safe from harmful content ": "https://spambusterai.streamlit.app/",
         "🏆 laptophunt ::perfect laptop -price prediction and product recommendation: get reasonable best choice laptop idea ,also predict prices of any ": "https://laptophunt-perfect-laptop.streamlit.app/",
         "🏆 MediPredict-Multi-Diseases Predictions AI -Predictions of heart dieesease,liver disease,kidney disease ,diabete disease. ": "https://medipredict-diseases-prediction-ai.streamlit.app/",
@@ -798,8 +835,7 @@ def show_resume_page():
         PDFbyte = pdf_file.read()
     profile_pic = Image.open(profile_pic)
 
-    # col1, col2 = st.columns(2, gap="small")
-    col1, col2 = st.columns([1,3])
+    col1, col2 = st.columns(2, gap="small")
     with col1:
         st.image(profile_pic, width=230)
 
@@ -818,94 +854,60 @@ def show_resume_page():
     cols = st.columns(len(SOCIAL_MEDIA))
     for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
         cols[index].write(f"[{platform}]({link})")
-        
-    st.container()
+
     st.write('\n')
-    st.subheader("Education & Qualifications")
+    st.subheader("Education & Qulifications")
     st.write(
         """
-    - ✔️ 2020-2024 Bachleor of Technology in computer science engineering at GALGOTIAS UNIVERSITY,Noida.
-    - ✔️ Worked on Images Encryption project by  using Advanced Encryption Standard and deployed it.
-    - ✔️ pursuing Google Data Analytics Advanced course-190 hours
-    - ✔️ Completed Database and SQL by Infosys 
+    - ✔️ Bachleor of technology in computer science engineering 
+    - ✔️ Proficient in RPA development, utilizing automation tools to streamline processes and improve efficiency.
+    - ✔️ Good understanding of statistical mathematics for machine learning
+    - ✔️ Excellent team-player and displaying strong sense of initiative on tasks
     """
     )
 
     # --- SKILLS ---
-    st.container()
     st.write('\n')
     st.subheader(" Skills")
     st.write(
         """
-    - 👩‍💻 Programming: Python,HTML/CSS
-    - 📊 Data Visulization-Numpy, Matplotlib, Seaborn,Power BI,Pandas, feature Engineering,EDA
-    - 📚 Mathematics for ML/DL- statistics ,Algebra,calculus,Matrices
-    - 😀 libraries& Frameworks -scikit-learn,Scipy,Tensorflow,keras,CV , Beautiful Soup,numpy,pandas
-    - 😀 ML/DL/NLP - Supervised,Unsupervised Learning,Model Evaluation,RNN,CNN NLP
-    - 🤖 MLops Tools-  MLflow, Jupyter ,collab ,CI/CD, AWS,Azure
-    - 🗄️ Database: MySQL,Google firebase
+    - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL,.net,HTML/CSS
+    - 🤖 Automation -UiPath soltuion architect
+    - 📊 Data Visulization: PowerBi, MS Excel, Plotly
+    - 📚 ml,dl:pytorch ,keras,CNN,NLP,Model Deployment
+    - 🗄️ Database: MySQL
     """
     )
-    st.container()
+
     st.write('\n')
-    st.subheader("Internship and Training")
+    st.subheader("Work History")
     st.write("---")
 
-    st.write("🚧", "*Data Analyst Intern|Lagozon edu Tech")
-    st.write("06/2023 - 07/2023")
-    st.write("📍Remote")
+    st.write("🚧", "**Virual internship - Data Analyst |Lagazon Tech")
+    st.write("07/2023 - Present")
     st.write(
         """
     - ► Used PowerBI and SQL to redeﬁne and track KPIs surrounding marketing initiatives, and supplied recommendations to boost landing page conversion rate by 38%
-    - ► implemented powerbi visuals in real life projects 
+    - ►implemented powerbi visuals in real life projects 
     """
     )
 
     st.write('\n')
-    st.write("🚧", "Project Intern |iNeuron.AI")
-    st.write("06/2023")
-    st.write("📍Remote")
-
+    st.write("🚧", "RPA automation and develoment |AICTE EduSkills UiPath")
+    st.write("05/2023 - 07/2023")
     st.write(
         """
-    - ► Build real world  Books Recommendation Engine with accuracy of over 95%.
-    - ► prepared all documentation of project with handling all eception cases that may occur.
-    - ►  learned to handle the deployed app with all time cases in Mlops
+    - ► Build real world Automation workflows with handling all exceptions that may occur
+    - ► designed and built custom workflows and automation scripts to streamline repetitive tasks, allowing employees to focus on more strategic activities.
+    - ►  learned to troubleshoot and optimize automation workflows, ensuring smooth and error-free execution.
     """
     )
-    st.write('\n')
-    st.write("🚧", "Data Science Intern  |codsoft pvt ltd")
-    st.write("06/2023-Present")
-    st.write("📍Remote")
 
-    
-    st.container()
-    st.write('\n')
-    st.subheader("Certifications :")
-    st.write("---")
-    st.write("📜"," Microsoft Learn Skill AI Challenge | Microsoft,july 2023")
-    st.write("📜","Python Essential| cisco ,july 2023")
-    st.write("📜","Database and SQL | infosys ,2023")
-    st.write("📜","Data Analysis-powerBI and SQL| Lagozon pvt ltd.,2023")
-
-
-
-
-    
-
-    st.container()
     st.write('\n')
     st.subheader("Projects :")
     st.write("---")
     for project, link in PROJECTS.items():
         st.write(f"[{project}]({link})")
-
-
-
-
-
-
-
 
 
 def image_to_base64(image):
