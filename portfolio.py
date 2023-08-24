@@ -1,4 +1,3 @@
-
 import streamlit as st
 import time
 from PIL import Image
@@ -7,7 +6,7 @@ import os
 
 def main():
     st.set_page_config(page_title="Animesh portfolio App", page_icon=":smiley:", layout="wide")
-
+    
     st.toast("please open the website in desktop site mode for better display")
     st.markdown(
         '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">',
@@ -73,22 +72,23 @@ def show_home_page():
     left_column, right_column = st.columns(2)
 
     image = Image.open("unnamed-removebg-preview-modified.png")
-    image_html = f"<img src='data:image/png;base64,{image_to_base64(image)}' " \
-                 f"style='border: 2px solid #ffffff; border-radius: 160px; box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;' " \
-                 f"width='300' alt='Beautiful Image'>"
+    image_html = f"<img src='https://clipclip.com/wp-content/uploads/elementor/thumbs/cc-programmer-2-ovmwuk5y3uzvblmccxrq3c3qzzvodph9skmt3g579c.png' " \
+                 f"style='border-radius: 0px;margin-left:30px;margin-top:50px; ' " \
+                 f"width='350' alt='Beautiful Image'>"
+
     left_column.markdown(image_html, unsafe_allow_html=True)
 
     styled_text = """
         <style>
             .description {
-                font-size: 24px;
+                font-size: 20px;
                 color: #ffffff;
                 line-height: 1.6;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 margin-bottom: 20px;
             }
             .role {
-                font-size: 36px;
+                font-size: 30px;
                 font-weight: bold;
                 color: #00ff99;
                 background: linear-gradient(90deg, #00ff99, #33ccff);
@@ -120,7 +120,7 @@ def show_home_page():
                 font-weight: bold;
                 font-family: "Candara", sans-serif;
                 color: #00ff99;
-                margin: 0;
+                margin-top: 30px;
             }
         </style>
         <div style='text-align: center;'>
@@ -134,7 +134,7 @@ def show_home_page():
             </div>
             <p class="description">
                 I am a <span class="role">Data Scientist</span>, <span class="role">AI Enthusiast</span>, and <span class="role">RPA Developer</span>
-                with a passion for leveraging data and technology to drive innovation.
+                with a passion for leveraging data and technology.
             </p>
 
 
@@ -207,28 +207,72 @@ def show_home_page():
                 -webkit-text-fill-color: transparent;
                 font-weight: bold;
             }
+            .image{
+             width:200px;
+             }
         </style>
         <div class="about-container">
             <h1 class="about-heading">About me:</h1>
+            <img class="image" src="https://static.vecteezy.com/system/resources/previews/010/265/390/original/cute-3d-robot-say-hello-png.png">
             <div class="about-text">
                 <p>
-                   As a dedicated <span class="highlight">Data Science enthusiast</span> with a fervent fascination for <span class="highlight">artificial intelligence</span>, I am driven by the <span class="highlight">infinite possibilities</span> that data and technology present. My journey in the realm of data science has ignited a relentless curiosity to decode patterns and extract <span class="highlight">meaningful insights</span> from complex datasets. With a good foundation in <span class="highlight">machine learning algorithms , deep learning</span> and <span class="highlight">statistical analysis</span>, I am committed to harnessing the power of <span class="highlight">AI</span> to develop predictive models and innovative solutions that propel businesses forward. Through constant exploration, hands-on experimentation, and an unquenchable thirst for knowledge,
-                   I aspire to contribute to the ever-evolving landscape of data science and AI with creativity and impact. 
-                <p>
-                    I possess a strong background in <span class="highlight">data analysis</span>.
-                    Using SQL and Power BI, I delve deep into datasets, uncovering meaningful patterns and trends to drive data-driven decisions.
-                    My ability to work with Power BI allows me to create interactive and visually compelling dashboards, presenting complex information in an accessible and understandable manner.
+                    <span class="highlight">Data science</span> fuels my curiosity to decode intricate patterns and extract valuable insights from complex and Big datasets. With a solid foundation in  <span class="highlight">machine learning, deep learning, and statistical analysis,</span>  I'm dedicated to harnessing AI's potential to create predictive models and innovative solutions that drive business advancement.<p>
+                    Using SQL and Power BI, I delve deep into datasets, uncovering meaningful <span class="highlight">patterns</span> to create interactive and visually compelling <span class="highlight">dashboards,</span>  presenting complex information in an accessible and understandable manner.
                 </p>
                 <p>
-                    my good expertise in <span class="highlight">RPA</span>, I am equipped to solve complex problems and optimize processes for businesses.
-                    My passion for staying at the forefront of technological advancements ensures that I can deliver innovative and effective solutions that drive growth and success.
-                    I am dedicated to making a significant impact on projects and contributing to the overall success of any organization.
+                    <span class="highlight">RPA</span>, I am equipped to solve complex problems and optimize processes for businesses.
+                    I can deliver innovative and effective solutions that drive growth and makes a significant impact on projects .
                 </p>
             </div>
         </div>
     """
+    x,y,z = st.columns(3)
+    x.markdown("<h1 style='text-align:justify;color:#00ff99; margin:auto;padding-top:150px;'>About me:</h1>",
+                unsafe_allow_html=True)
 
-    st.markdown(a_text, unsafe_allow_html=True)
+    image = Image.open("unnamed-removebg-preview-modified.png")
+    image_html = f"<img src='data:image/png;base64,{image_to_base64(image)}' " \
+                 f"style='border: 2px solid #ffffff; border-radius: 160px;margin-left:80px;margin-top:70px; box-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 25px #00ff00;' " \
+                 f"width='200' alt='Beautiful Image'>"
+
+    x.markdown(image_html, unsafe_allow_html=True)
+
+
+    # Add a customized dashed line using HTML and CSS
+    x.markdown('<hr style="border-top: 10px solid green;margin-left:80px;margin-top:40px;border-radius:150px; width: 200px;">', unsafe_allow_html=True)
+
+    # Continue adding more content
+    about_me_points = [
+        "I am passionate about Data Science ,AI 🤖 and fond of working with data manipulation and visualization📈 ",
+        " "
+        "Currently pursuing 🎓B.tech CSE at GALGOTIAS UNIVERSITY, Noida📍🇮🇳 ",
+        "Beside the tech I'm enthusiastic about Astronomy🔭 and exploring the vast universe science.⭐",
+
+         ]
+
+    # Display About Me heading
+    y.markdown("<h1 style='text-align:justify;color:#00ff99; margin-right:5px;padding-top:200px;'></h1>",
+                unsafe_allow_html=True)
+
+    # Display About Me in bullet points
+    for point in about_me_points:
+        y.write(f"- {point}")
+    from pathlib import Path
+
+    current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
+    css_file = current_dir / "main.css"
+    resume_file = current_dir / "animesh_Resume.pdf"
+    with open(resume_file, "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+    # st.markdown(a_text, unsafe_allow_html=True)
+    st.write('<div style="margin-left: 50px;">', unsafe_allow_html=True)
+    y.download_button(
+        label=" 📄 Download Resume",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream",
+    )
+    st.write('</div>', unsafe_allow_html=True)
 
     # my service section::
 
@@ -240,9 +284,9 @@ def show_home_page():
         <style>
         .service-item {
             background-color: black;
-            margin: 80px;
+            margin: 50px;
             padding: 10px;
-            width : 260px;
+            width : 300px;
             box-shadow: 5 2px 4px rgba(5000, 0, 0, 0.1);
             border-radius: 40px;
             overflow: hidden;
