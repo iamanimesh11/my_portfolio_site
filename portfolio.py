@@ -273,7 +273,13 @@ def show_home_page():
         mime="application/octet-stream",
     )
     st.write('</div>', unsafe_allow_html=True)
-
+    site="https://animesh11portfolio.streamlit.app/#projects"
+    y.markdown(f""" <a href="{site}" target="_blank">
+                      <button class="custom-button">Project Files</button>
+                      </a>
+                      """,
+                unsafe_allow_html=True
+                )
     # my service section::
 
     st.markdown("<h1 style='text-align:justify;color:#00ff99; margin:auto;padding-top:150px;'>What I do:</h1>",
