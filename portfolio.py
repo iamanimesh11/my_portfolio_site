@@ -659,6 +659,8 @@ def show_projects_page():
 
 
     elif category == "Data Science-ML Projects":
+        st.title("Projects")
+
         # st.title("My Machine and Deep learning Projects")
         ml_dict = [
 
