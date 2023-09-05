@@ -703,6 +703,15 @@ def show_projects_page():
 
             },
             {
+                "image_url": "https://cdn-icons-png.flaticon.com/512/4704/4704539.png",
+                "title": "Colors Recognizer Tool using OpenCV",
+                "content": "Developed a real-time colors recognition project using OpenCV for colors detection in single frame or mutlifram at real time. This AI system can analyze colos from live camera feeds, offering instant insights into color name,RGB value. The integration of these technologies holds promise for improved user experiences and  further use in real world projects using cv",
+                "project_link": "https://github.com/iamanimesh11/CodeClauseInternship_ColorRecognizer",
+                "document-link": "https://github.com/iamanimesh11/CodeClauseInternship_ColorRecognizer",
+                "video_url": "https://youtu.be/PRsUgFElVJQ"
+
+            },
+            {
                 "image_url": "https://www.pngarts.com/files/1/Health-PNG-Pic.png",
                 "title": "MediPredict-Multi-Diseases Predictions AI",
                 "content": "Discover insights into your well-being through advanced machine learning models that offer Predictions of heart dieesease,liver disease,kidney disease ,diabete disease. User friendly interface helps you to input the details and let the models in backend works upon it .Accuray are relative high of all prediction model .Don't just get prediction also visualise the details as per required and know what factors are major impact to that particular disease",
