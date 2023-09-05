@@ -708,7 +708,7 @@ def show_projects_page():
                 "content": "Developed a real-time colors recognition project using OpenCV for colors detection in single frame or mutlifram at real time. This AI system can analyze colos from live camera feeds, offering instant insights into color name,RGB value. The integration of these technologies holds promise for improved user experiences and  further use in real world projects using cv",
                 "project_link": "https://github.com/iamanimesh11/CodeClauseInternship_ColorRecognizer",
                 "document-link": "https://github.com/iamanimesh11/CodeClauseInternship_ColorRecognizer",
-                "video_url": "https://youtu.be/PRsUgFElVJQ"
+                "video_url": "https://www.youtube.com/embed/PRsUgFElVJQ"
 
             },
             {
